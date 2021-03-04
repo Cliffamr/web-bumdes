@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Produk</title>
+
+    <!--BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/kategori-produk.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/single-produk.css">
+    <!-- G FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- OWL -->
+    <link rel="stylesheet" href="./assets/owl/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/owl/owl.theme.default.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategori
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item m-0" href="#">Action</a></li>
+                                <li><a class="dropdown-item m-0" href="#">Another action</a></li>
+                                <li><a class="dropdown-item m-0" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Promo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mitra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tentang</a>
+                        </li>
+                    </ul>
+                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.0013 20.3428C22.2484 19.6716 21.5893 18.9022 21.0416 18.0552C20.4437 16.886 20.0854 15.6092 19.9876 14.2997V10.4427C19.9927 8.38589 19.2466 6.39795 17.8895 4.85243C16.5323 3.3069 14.6574 2.31017 12.6172 2.04951V1.04232C12.6172 0.76588 12.5073 0.500762 12.3119 0.305289C12.1164 0.109816 11.8513 0 11.5748 0C11.2984 0 11.0333 0.109816 10.8378 0.305289C10.6423 0.500762 10.5325 0.76588 10.5325 1.04232V2.06512C8.51053 2.34458 6.65834 3.34734 5.31898 4.88767C3.97962 6.428 3.24387 8.40153 3.24798 10.4427V14.2997C3.15019 15.6092 2.79184 16.886 2.19395 18.0552C1.65591 18.9002 1.00734 19.6696 0.26546 20.3428C0.182177 20.416 0.115429 20.506 0.0696578 20.607C0.0238863 20.708 0.000140378 20.8175 0 20.9284V21.9902C0 22.1973 0.0822588 22.3959 0.228681 22.5423C0.375102 22.6887 0.573693 22.771 0.780765 22.771H22.486C22.6931 22.771 22.8917 22.6887 23.0381 22.5423C23.1845 22.3959 23.2668 22.1973 23.2668 21.9902V20.9284C23.2666 20.8175 23.2429 20.708 23.1971 20.607C23.1514 20.506 23.0846 20.416 23.0013 20.3428ZM1.62399 21.2095C2.35042 20.5077 2.99001 19.7213 3.52906 18.8672C4.28219 17.4551 4.72162 15.8972 4.81732 14.2997V10.4427C4.78635 9.5277 4.93984 8.61579 5.26863 7.76132C5.59743 6.90684 6.09481 6.12727 6.73116 5.46902C7.36751 4.81077 8.12982 4.28731 8.97269 3.9298C9.81555 3.57229 10.7217 3.38805 11.6373 3.38805C12.5528 3.38805 13.459 3.57229 14.3019 3.9298C15.1448 4.28731 15.9071 4.81077 16.5434 5.46902C17.1798 6.12727 17.6772 6.90684 18.006 7.76132C18.3347 8.61579 18.4882 9.5277 18.4573 10.4427V14.2997C18.553 15.8972 18.9924 17.4551 19.7455 18.8672C20.2846 19.7213 20.9242 20.5077 21.6506 21.2095H1.62399Z"
+                            fill="#51C2D5" />
+                        <path
+                            d="M11.6726 25.3787C12.1645 25.3674 12.6365 25.1825 13.0051 24.8567C13.3737 24.5309 13.6153 24.0853 13.687 23.5986H9.5802C9.65396 24.0985 9.90681 24.5546 10.2917 24.8821C10.6766 25.2095 11.1674 25.386 11.6726 25.3787V25.3787Z"
+                            fill="#51C2D5" />
+                    </svg>
+                    <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.9346 17.0145H8.01182L8.91171 15.2027L23.8639 15.1759C24.3695 15.1759 24.8029 14.8189 24.8932 14.325L26.9639 2.86798C27.0181 2.5675 26.9368 2.25809 26.7382 2.02306C26.64 1.90739 26.5175 1.81421 26.3793 1.74999C26.241 1.68578 26.0903 1.65206 25.9376 1.65117L6.91629 1.58869L6.75376 0.833023C6.65143 0.35106 6.21202 0 5.71241 0H1.06242C0.780651 0 0.51042 0.110646 0.311177 0.307598C0.111934 0.504549 0 0.771673 0 1.0502C0 1.32874 0.111934 1.59586 0.311177 1.79281C0.51042 1.98976 0.780651 2.10041 1.06242 2.10041H4.85163L5.56192 5.43845L7.31056 13.8074L5.0593 17.4399C4.94239 17.5959 4.87197 17.7811 4.85602 17.9746C4.84006 18.1681 4.8792 18.3621 4.96901 18.5348C5.14959 18.8888 5.51377 19.1119 5.91707 19.1119H7.80716C7.40421 19.641 7.18657 20.2854 7.18716 20.9476C7.18716 22.6315 8.57162 24 10.2751 24C11.9786 24 13.3631 22.6315 13.3631 20.9476C13.3631 20.2841 13.1403 19.6385 12.7431 19.1119H17.5917C17.1887 19.641 16.9711 20.2854 16.9717 20.9476C16.9717 22.6315 18.3561 24 20.0596 24C21.7631 24 23.1476 22.6315 23.1476 20.9476C23.1476 20.2841 22.9249 19.6385 22.5276 19.1119H25.9376C26.5215 19.1119 27 18.6419 27 18.0617C26.9983 17.7835 26.8852 17.5172 26.6856 17.321C26.486 17.1248 26.2161 17.0147 25.9346 17.0145ZM7.35871 3.65935L24.6886 3.71588L22.9911 13.1112L9.37822 13.135L7.35871 3.65935ZM10.2751 21.8877C9.75142 21.8877 9.32404 21.4652 9.32404 20.9476C9.32404 20.4299 9.75142 20.0074 10.2751 20.0074C10.7988 20.0074 11.2262 20.4299 11.2262 20.9476C11.2262 21.1969 11.126 21.436 10.9476 21.6123C10.7693 21.7886 10.5273 21.8877 10.2751 21.8877ZM20.0596 21.8877C19.5359 21.8877 19.1086 21.4652 19.1086 20.9476C19.1086 20.4299 19.5359 20.0074 20.0596 20.0074C20.5833 20.0074 21.0107 20.4299 21.0107 20.9476C21.0107 21.1969 20.9105 21.436 20.7321 21.6123C20.5538 21.7886 20.3119 21.8877 20.0596 21.8877Z"
+                            fill="#51C2D5" />
+                    </svg>
+                    <img src="./assets//img/nav-profile.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END NAV -->
+
+    <!-- BREAD CRUMB -->
+    <section class="bread mypt">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./kategori-produk.html">Tangkapan Laut</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Single Produk</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- END BREAD CRUMB -->
+
+    <section class="single">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Mesin Cuci Modern</h2>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-11">
+                    <div class="content d-flex">
+                        <div class="detail d-flex">
+                            <p class="title">Mitra</p>
+                            <p class="mx-2">:</p>
+                            <p class="sub-title primarycolorsemibold">Desa Belawan Bahari, Sumatra Utara</p>
+                            <p class="mx-3">|</p>
+                        </div>
+                        <div class="detail d-flex">
+                            <p class="title">Maksimal Tangkapan</p>
+                            <p class="mx-2">:</p>
+                            <p class="sub-title">700 Kg</p>
+                            <p class="mx-3">|</p>
+                        </div>
+                        <div class="detail d-flex">
+                            <p class="title">Ulasan</p>
+                            <p class="mx-2">:</p>
+                            <p class="sub-title">
+                                <img class="mb-1" src="./assets/img/star.png" alt />
+                                4/5 ( 500 )
+                            </p>
+                            <p class="mx-3">|</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5 text-right">
+                    <div class="img-wrapper">
+                        <img src="img/love.svg" alt />
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <img class="img-fluid" :src="imageDefault" width="100%" alt />
+                    <div class="list-photo justify-content-between d-flex">
+                        <img @click="changeImage(thumbs[0])" src="img/mini-mesin-cuci.png" alt />
+                        <img @click="changeImage(thumbs[1])" src="img/mesin-cuci-2-mini.png" alt />
+                        <img src="img/mini-mesin-cuci-3.png" alt />
+                        <img src="img/play.png" alt />
+                    </div>
+                </div>
+                <div class="col-lg-8 price-wrapper">
+                    <p class="first-price">Rp 298.000</p>
+                    <h1>Rp 10.000 / kg</h1>
+                    <div class="line"></div>
+                    <div class="setting-wrapper d-flex">
+                        <div>
+                            <p class="title">Jumlah Pesanan / kg</p>
+                            <div class="d-flex align-items-center setting">
+                                <button>
+                                    <img src="img/minus.svg" alt />
+                                </button>
+                                <p class="m-0">1</p>
+                                <button>
+                                    <img src="img/plus.svg" alt />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <p class="title">Durasi Penangkapan</p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-wrapper d-flex mt-5">
+                        <router-link to="/cart">
+                            <button class="rent-now mr-3">Sewa Sekarang</button>
+                        </router-link>
+                        <button class="chat">Hubungi Merchant</button>
+                    </div>
+                    <div class="setting-wrapper mt-4">
+                        <p class="title">Merchant</p>
+                        <div class="d-flex align-items-center merchant">
+                            <img src="img/eve-store.png" class="mr-3" alt />
+                            <div class>
+                                <h4 class="mb-0">Eve Store</h4>
+                                <p class="m-0">
+                                    <span>57K</span> Pengikut
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

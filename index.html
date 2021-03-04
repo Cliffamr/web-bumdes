@@ -42,9 +42,9 @@
                                 Kategori
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item m-0" href="#">Action</a></li>
-                                <li><a class="dropdown-item m-0" href="#">Another action</a></li>
-                                <li><a class="dropdown-item m-0" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item m-0" href="#">Tangkapan Laut</a></li>
+                                <li><a class="dropdown-item m-0" href="#">Budidaya Kelautan</a></li>
+                                <li><a class="dropdown-item m-0" href="#">Olahan Laut</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -135,12 +135,14 @@
                 <p class="mycolorgray mt-2">Kami memiliki 3 kategori produk kelautan berkualitas yang
                     sesuai <br> dengan kebutuhan Kamu !</p>
             </div>
-            <div class="row text-center">
+            <div class="row">
                 <div v-for="myCategory in categoryCard" v-bind:key="myCategory.id"
                     class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <svg class="mt-4" width="154" height="154" viewBox="0 0 154 154" fill="none"
+                    <a style="text-decoration:none;" href="./kategori-produk.html">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- <svg class="mt-4" width="154" height="154" viewBox="0 0 154 154" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M75.25 2.74241C76.3329 2.1172 77.6671 2.1172 78.75 2.74241L140.434 38.3557C141.517 38.9809 142.184 40.1363 142.184 41.3867V112.613C142.184 113.864 141.517 115.019 140.434 115.644L78.75 151.258C77.6671 151.883 76.3329 151.883 75.25 151.258L13.566 115.644C12.4831 115.019 11.816 113.864 11.816 112.613V41.3867C11.816 40.1363 12.4831 38.9809 13.566 38.3557L75.25 2.74241Z"
@@ -151,13 +153,32 @@
                                 <path class="path"
                                     d="M92.125 85.25V93.5H61.875V85.25H56.375V96.25C56.375 97.7708 57.607 99 59.125 99H94.875C96.3957 99 97.625 97.7708 97.625 96.25V85.25H92.125Z"
                                     fill="#9C9EA3" />
-                            </svg>
-                            <h4 class="mt-4 mb-3 title mycolorblack">{{ myCategory.title }}</h4>
-                            <hr
-                                style="background: #000; width: 50px; margin: auto; height: 5px; border-radius: 2000px;" />
-                            <p class="kategori-desc mycolorgray mt-3">{{ myCategory.desc }}</p>
+                            </svg> -->
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.6928 7.86766C9.47565 6.64986 9.53812 3.01108 9.79002 1.25095C14.8088 -0.859213 20.5562 -0.272972 25.0456 2.80705C24.3314 3.48948 23.8859 4.40564 23.7903 5.38881C23.66 6.86091 24.1523 8.32027 25.1477 9.41262C25.614 9.88007 25.6102 12.3338 24.9045 14.6807C24.5155 15.9002 23.3527 16.7036 22.0745 16.6362C20.7962 16.5688 19.7244 15.6475 19.4658 14.3939C19.2958 13.5288 18.3778 9.15201 17.0933 7.86766C16.2285 7.0028 14.9379 7.3996 13.687 7.78419L13.6757 7.78766C12.2603 8.22388 11.289 8.4658 10.6928 7.86766ZM26.0956 3.59244C25.5101 4.07269 25.1391 4.7656 25.064 5.5191C24.9747 6.60823 25.3316 7.68693 26.0528 8.5079C27.2066 9.66233 26.7303 13.0519 26.1296 15.0497C25.5715 16.8324 23.8776 18.0112 22.0121 17.915C20.1466 17.8189 18.5828 16.4722 18.2109 14.6417C17.9311 12.571 17.2437 10.5763 16.1885 8.77286C15.8672 8.45286 14.9469 8.73535 14.0523 9.01094C12.681 9.43334 10.9735 9.95903 9.7885 8.77286C8.2854 7.26924 8.25404 3.9205 8.42991 1.90412C3.86092 4.35277 0.763947 8.86596 0.122826 14.0099C-0.518295 19.1539 1.37614 24.2892 5.20431 27.7844C5.43471 24.4598 6.29141 18.6591 9.45762 17.9364C10.72 17.5337 12.0932 17.6758 13.2464 18.3283C14.464 19.2984 15.2251 20.7296 15.349 22.2815C15.8391 24.8801 17.3354 26.2401 18.5603 26.2401C19.3891 26.2401 20.3715 24.8532 21.2378 23.6301L21.2399 23.6272C22.3367 22.0794 23.4701 20.4801 24.9603 20.4801C27.0876 20.4801 28.5304 22.3105 28.9667 25.3477C33.9369 18.4836 32.6763 8.93198 26.0957 3.59218L26.0956 3.59244ZM22.2828 24.3702C23.1492 23.147 24.1316 21.7602 24.9604 21.7602C26.9272 21.7602 27.7124 24.2414 27.8189 26.7587C22.2893 32.869 13.0124 33.7538 6.42762 28.7987C6.58518 24.8307 7.52202 19.691 9.74282 19.1839C10.6672 18.8704 11.6796 18.9481 12.5454 19.3989C13.4515 20.1948 14.0071 21.3159 14.0916 22.5189C14.6466 25.4633 16.4841 27.5202 18.5604 27.5202C20.0506 27.5202 21.184 25.9209 22.2808 24.3731L22.2828 24.3702Z"
+                                        fill="#19DB60" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.6928 7.86766C9.47565 6.64986 9.53812 3.01108 9.79002 1.25095C14.8088 -0.859213 20.5562 -0.272972 25.0456 2.80705C24.3314 3.48948 23.8859 4.40564 23.7903 5.38881C23.66 6.86091 24.1523 8.32027 25.1477 9.41262C25.614 9.88007 25.6102 12.3338 24.9045 14.6807C24.5155 15.9002 23.3527 16.7036 22.0745 16.6362C20.7962 16.5688 19.7244 15.6475 19.4658 14.3939C19.2958 13.5288 18.3778 9.15201 17.0933 7.86766C16.2285 7.0028 14.9379 7.3996 13.687 7.78419L13.6757 7.78766C12.2603 8.22388 11.289 8.4658 10.6928 7.86766ZM26.0956 3.59244C25.5101 4.07269 25.1391 4.7656 25.064 5.5191C24.9747 6.60823 25.3316 7.68693 26.0528 8.5079C27.2066 9.66233 26.7303 13.0519 26.1296 15.0497C25.5715 16.8324 23.8776 18.0112 22.0121 17.915C20.1466 17.8189 18.5828 16.4722 18.2109 14.6417C17.9311 12.571 17.2437 10.5763 16.1885 8.77286C15.8672 8.45286 14.9469 8.73535 14.0523 9.01094C12.681 9.43334 10.9735 9.95903 9.7885 8.77286C8.2854 7.26924 8.25404 3.9205 8.42991 1.90412C3.86092 4.35277 0.763947 8.86596 0.122826 14.0099C-0.518295 19.1539 1.37614 24.2892 5.20431 27.7844C5.43471 24.4598 6.29141 18.6591 9.45762 17.9364C10.72 17.5337 12.0932 17.6758 13.2464 18.3283C14.464 19.2984 15.2251 20.7296 15.349 22.2815C15.8391 24.8801 17.3354 26.2401 18.5603 26.2401C19.3891 26.2401 20.3715 24.8532 21.2378 23.6301L21.2399 23.6272C22.3367 22.0794 23.4701 20.4801 24.9603 20.4801C27.0876 20.4801 28.5304 22.3105 28.9667 25.3477C33.9369 18.4836 32.6763 8.93198 26.0957 3.59218L26.0956 3.59244ZM22.2828 24.3702C23.1492 23.147 24.1316 21.7602 24.9604 21.7602C26.9272 21.7602 27.7124 24.2414 27.8189 26.7587C22.2893 32.869 13.0124 33.7538 6.42762 28.7987C6.58518 24.8307 7.52202 19.691 9.74282 19.1839C10.6672 18.8704 11.6796 18.9481 12.5454 19.3989C13.4515 20.1948 14.0071 21.3159 14.0916 22.5189C14.6466 25.4633 16.4841 27.5202 18.5604 27.5202C20.0506 27.5202 21.184 25.9209 22.2808 24.3731L22.2828 24.3702Z"
+                                        fill="url(#paint0_linear)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="88" y1="12.5" x2="-13.5" y2="20"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#3875E3" />
+                                            <stop offset="0.991343" stop-color="#3875E3" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <h4 class="mt-3 mb-3 title primarycolorsemibold">{{ myCategory.title }}</h4>
+                                <!-- <hr style="background: #000; width: 70px; height: 5px; border-radius: 2000px;" /> -->
+                                <p style="text-align: left;" class="kategori-desc mycolorgray mt-3">
+                                    {{ myCategory.desc }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -179,21 +200,70 @@
             </div>
 
             <div class="row owl-carousel-one owl-carousel">
-                <div v-for="myCatalog in catalog" v-bind:key="myCatalog.id" class="item cardz">
+
+                <div class="item cardz">
                     <div class="cardz-header">
-                        <img width="100%" class="img-fluid" :src="myCatalog.image" alt="">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog1.png" alt="">
                     </div>
                     <div class="cardz-body">
-                        <p class="mb-1">Tangkapan Laut dari, <span>Nusawungu</span> </p>
-                        <h4>{{myCatalog.title}}</h4>
+                        <p class="mb-2">Tangkapan Laut Dari : <span class="primarycolorsemibold">Nusawungu, Jawa tengah
+                            </span> </p>
+                        <h4>Ikan Gurame Porselen</h4>
                         <div style="position: absolute; bottom: 25px">
                             <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
                             <h4>Rp 40.000/kg</h4>
-                            <p class="mb-0">Minimum pembelian <span>100kg</span> </p>
+                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
                         </div>
-
                     </div>
                 </div>
+                <div class="item cardz">
+                    <div class="cardz-header">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog2.png" alt="">
+                    </div>
+                    <div class="cardz-body">
+                        <p class="mb-2">Tangkapan Laut Dari : <span class="primarycolorsemibold">Nusawungu, Jawa tengah
+                            </span> </p>
+                        <h4>Kepiting Belengkakem</h4>
+                        <div style="position: absolute; bottom: 25px">
+                            <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
+                            <h4>Rp 40.000/kg</h4>
+                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item cardz">
+                    <div class="cardz-header">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog3.png" alt="">
+                    </div>
+                    <div class="cardz-body">
+                        <p class="mb-2">Budidaya Kelautan Dari : <span class="primarycolorsemibold">Nusawungu, Jawa
+                                tengah
+                            </span> </p>
+                        <h4>Tuna Albakora</h4>
+                        <div style="position: absolute; bottom: 25px">
+                            <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
+                            <h4>Rp 40.000/kg</h4>
+                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item cardz">
+                    <div class="cardz-header">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog4.png" alt="">
+                    </div>
+                    <div class="cardz-body">
+                        <p class="mb-2">Olahan Kelautan Dari : <span class="primarycolorsemibold">Nusawungu, Jawa
+                                tengah
+                            </span> </p>
+                        <h4>Kepiting Gelenteng</h4>
+                        <div style="position: absolute; bottom: 25px">
+                            <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
+                            <h4>Rp 40.000/kg</h4>
+                            <p class="mb-0">Tidak Ada Minimum Pembelian</span> </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="d-flex aling-items-center mt-5 justify-content-center">
@@ -232,21 +302,70 @@
             </div>
 
             <div class="row owl-carousel-two owl-carousel">
-                <div v-for="myCatalog in catalog" v-bind:key="myCatalog.id" class="item cardz">
+
+                <div class="item cardz">
                     <div class="cardz-header">
-                        <img width="100%" class="img-fluid" :src="myCatalog.image" alt="">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog1.png" alt="">
                     </div>
                     <div class="cardz-body">
-                        <p class="mb-1">Tangkapan Laut dari, <span>Nusawungu</span> </p>
-                        <h4>{{myCatalog.title}}</h4>
+                        <p class="mb-2">Tangkapan Laut Dari : <span class="primarycolorsemibold">Nusawungu, Jawa tengah
+                            </span> </p>
+                        <h4>Ikan Gurame Porselen</h4>
                         <div style="position: absolute; bottom: 25px">
                             <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
                             <h4>Rp 40.000/kg</h4>
-                            <p class="mb-0">Minimum pembelian <span>100kg</span> </p>
+                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
                         </div>
-
                     </div>
                 </div>
+                <div class="item cardz">
+                    <div class="cardz-header">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog2.png" alt="">
+                    </div>
+                    <div class="cardz-body">
+                        <p class="mb-2">Tangkapan Laut Dari : <span class="primarycolorsemibold">Nusawungu, Jawa tengah
+                            </span> </p>
+                        <h4>Kepiting Belengkakem</h4>
+                        <div style="position: absolute; bottom: 25px">
+                            <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
+                            <h4>Rp 40.000/kg</h4>
+                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item cardz">
+                    <div class="cardz-header">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog3.png" alt="">
+                    </div>
+                    <div class="cardz-body">
+                        <p class="mb-2">Budidaya Kelautan Dari : <span class="primarycolorsemibold">Nusawungu, Jawa
+                                tengah
+                            </span> </p>
+                        <h4>Tuna Albakora</h4>
+                        <div style="position: absolute; bottom: 25px">
+                            <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
+                            <h4>Rp 40.000/kg</h4>
+                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item cardz">
+                    <div class="cardz-header">
+                        <img width="100%" class="img-fluid" src="./assets/img/catalog4.png" alt="">
+                    </div>
+                    <div class="cardz-body">
+                        <p class="mb-2">Olahan Kelautan Dari : <span class="primarycolorsemibold">Nusawungu, Jawa
+                                tengah
+                            </span> </p>
+                        <h4>Kepiting Gelenteng</h4>
+                        <div style="position: absolute; bottom: 25px">
+                            <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
+                            <h4>Rp 40.000/kg</h4>
+                            <p class="mb-0">Tidak Ada Minimum Pembelian</span> </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="d-flex aling-items-center mt-5 justify-content-center">
@@ -313,27 +432,57 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center mt-4 profil">
+            <div class="row text-center mt-5 profil">
                 <div class="col">
                     <div v-if="menu === 'testi1'">
-                        <h5 class="mb-1">Raihan Athaya</h5>
+                        <h5 class="primarycolorsemibold mb-1">Raihan Athaya</h5>
                         <p>Pengusaha Kepiting - Jakarta</p>
+                        <svg class="mb-3" width="46" height="44" viewBox="0 0 14 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.0924 9.11736C13.3039 7.80243 13.1819 6.11382 13.1781 6.09456V0.958097C13.1781 0.787813 13.1104 0.624503 12.99 0.504094C12.8696 0.383685 12.7063 0.31604 12.536 0.31604H8.68368C7.97549 0.31604 7.39957 0.891965 7.39957 1.60015V6.09456C7.39957 6.26484 7.46721 6.42815 7.58762 6.54856C7.70803 6.66897 7.87134 6.73661 8.04162 6.73661H10.0179C10.0043 7.05404 9.90947 7.36266 9.74243 7.63292C9.41627 8.14721 8.80182 8.49842 7.91514 8.67563L7.39957 8.77835V10.589H8.04162C9.82847 10.589 11.1916 10.0939 12.0924 9.11736ZM5.02524 9.11736C6.23744 7.80243 6.11481 6.11382 6.11096 6.09456V0.958097C6.11096 0.787813 6.04331 0.624503 5.9229 0.504094C5.80249 0.383685 5.63918 0.31604 5.4689 0.31604H1.61656C0.908369 0.31604 0.332443 0.891965 0.332443 1.60015V6.09456C0.332443 6.26484 0.400088 6.42815 0.520497 6.54856C0.640906 6.66897 0.804216 6.73661 0.9745 6.73661H2.95075C2.93719 7.05404 2.84235 7.36266 2.67531 7.63292C2.34914 8.14721 1.7347 8.49842 0.848015 8.67563L0.332443 8.77835V10.589H0.9745C2.76135 10.589 4.12443 10.0939 5.02524 9.11736Z"
+                                fill="#909091" />
+                        </svg>
                     </div>
                     <div v-if="menu === 'testi2'">
-                        <h5 class="mb-1">Neymar Junior Alaves</h5>
+                        <h5 class="primarycolorsemibold mb-1">Neymar Junior Alaves</h5>
                         <p>Pengusaha Hiu - Jakarta</p>
+                        <svg class="mb-3" width="46" height="44" viewBox="0 0 14 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.0924 9.11736C13.3039 7.80243 13.1819 6.11382 13.1781 6.09456V0.958097C13.1781 0.787813 13.1104 0.624503 12.99 0.504094C12.8696 0.383685 12.7063 0.31604 12.536 0.31604H8.68368C7.97549 0.31604 7.39957 0.891965 7.39957 1.60015V6.09456C7.39957 6.26484 7.46721 6.42815 7.58762 6.54856C7.70803 6.66897 7.87134 6.73661 8.04162 6.73661H10.0179C10.0043 7.05404 9.90947 7.36266 9.74243 7.63292C9.41627 8.14721 8.80182 8.49842 7.91514 8.67563L7.39957 8.77835V10.589H8.04162C9.82847 10.589 11.1916 10.0939 12.0924 9.11736ZM5.02524 9.11736C6.23744 7.80243 6.11481 6.11382 6.11096 6.09456V0.958097C6.11096 0.787813 6.04331 0.624503 5.9229 0.504094C5.80249 0.383685 5.63918 0.31604 5.4689 0.31604H1.61656C0.908369 0.31604 0.332443 0.891965 0.332443 1.60015V6.09456C0.332443 6.26484 0.400088 6.42815 0.520497 6.54856C0.640906 6.66897 0.804216 6.73661 0.9745 6.73661H2.95075C2.93719 7.05404 2.84235 7.36266 2.67531 7.63292C2.34914 8.14721 1.7347 8.49842 0.848015 8.67563L0.332443 8.77835V10.589H0.9745C2.76135 10.589 4.12443 10.0939 5.02524 9.11736Z"
+                                fill="#909091" />
+                        </svg>
                     </div>
                     <div v-if="menu === 'testi3'">
-                        <h5 class="mb-1">Dinda Maylan</h5>
+                        <h5 class="primarycolorsemibold mb-1">Dinda Maylan</h5>
                         <p>Pengusaha Cumi - Jakarta</p>
+                        <svg class="mb-3" width="46" height="44" viewBox="0 0 14 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.0924 9.11736C13.3039 7.80243 13.1819 6.11382 13.1781 6.09456V0.958097C13.1781 0.787813 13.1104 0.624503 12.99 0.504094C12.8696 0.383685 12.7063 0.31604 12.536 0.31604H8.68368C7.97549 0.31604 7.39957 0.891965 7.39957 1.60015V6.09456C7.39957 6.26484 7.46721 6.42815 7.58762 6.54856C7.70803 6.66897 7.87134 6.73661 8.04162 6.73661H10.0179C10.0043 7.05404 9.90947 7.36266 9.74243 7.63292C9.41627 8.14721 8.80182 8.49842 7.91514 8.67563L7.39957 8.77835V10.589H8.04162C9.82847 10.589 11.1916 10.0939 12.0924 9.11736ZM5.02524 9.11736C6.23744 7.80243 6.11481 6.11382 6.11096 6.09456V0.958097C6.11096 0.787813 6.04331 0.624503 5.9229 0.504094C5.80249 0.383685 5.63918 0.31604 5.4689 0.31604H1.61656C0.908369 0.31604 0.332443 0.891965 0.332443 1.60015V6.09456C0.332443 6.26484 0.400088 6.42815 0.520497 6.54856C0.640906 6.66897 0.804216 6.73661 0.9745 6.73661H2.95075C2.93719 7.05404 2.84235 7.36266 2.67531 7.63292C2.34914 8.14721 1.7347 8.49842 0.848015 8.67563L0.332443 8.77835V10.589H0.9745C2.76135 10.589 4.12443 10.0939 5.02524 9.11736Z"
+                                fill="#909091" />
+                        </svg>
                     </div>
                     <div v-if="menu === 'testi4'">
-                        <h5 class="mb-1">Anna Taylor Joy</h5>
+                        <h5 class="primarycolorsemibold mb-1">Anna Taylor Joy</h5>
                         <p>Pengusaha Lobster - Jakarta</p>
+                        <svg class="mb-3" width="46" height="44" viewBox="0 0 14 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.0924 9.11736C13.3039 7.80243 13.1819 6.11382 13.1781 6.09456V0.958097C13.1781 0.787813 13.1104 0.624503 12.99 0.504094C12.8696 0.383685 12.7063 0.31604 12.536 0.31604H8.68368C7.97549 0.31604 7.39957 0.891965 7.39957 1.60015V6.09456C7.39957 6.26484 7.46721 6.42815 7.58762 6.54856C7.70803 6.66897 7.87134 6.73661 8.04162 6.73661H10.0179C10.0043 7.05404 9.90947 7.36266 9.74243 7.63292C9.41627 8.14721 8.80182 8.49842 7.91514 8.67563L7.39957 8.77835V10.589H8.04162C9.82847 10.589 11.1916 10.0939 12.0924 9.11736ZM5.02524 9.11736C6.23744 7.80243 6.11481 6.11382 6.11096 6.09456V0.958097C6.11096 0.787813 6.04331 0.624503 5.9229 0.504094C5.80249 0.383685 5.63918 0.31604 5.4689 0.31604H1.61656C0.908369 0.31604 0.332443 0.891965 0.332443 1.60015V6.09456C0.332443 6.26484 0.400088 6.42815 0.520497 6.54856C0.640906 6.66897 0.804216 6.73661 0.9745 6.73661H2.95075C2.93719 7.05404 2.84235 7.36266 2.67531 7.63292C2.34914 8.14721 1.7347 8.49842 0.848015 8.67563L0.332443 8.77835V10.589H0.9745C2.76135 10.589 4.12443 10.0939 5.02524 9.11736Z"
+                                fill="#909091" />
+                        </svg>
                     </div>
                     <div v-if="menu === 'testi5'">
-                        <h5 class="mb-1">Daffa Raihan Zaki</h5>
+                        <h5 class="primarycolorsemibold mb-1">Daffa Raihan Zaki</h5>
                         <p>Pengusaha Babi Laut - Jakarta</p>
+                        <svg class="mb-3" width="46" height="44" viewBox="0 0 14 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.0924 9.11736C13.3039 7.80243 13.1819 6.11382 13.1781 6.09456V0.958097C13.1781 0.787813 13.1104 0.624503 12.99 0.504094C12.8696 0.383685 12.7063 0.31604 12.536 0.31604H8.68368C7.97549 0.31604 7.39957 0.891965 7.39957 1.60015V6.09456C7.39957 6.26484 7.46721 6.42815 7.58762 6.54856C7.70803 6.66897 7.87134 6.73661 8.04162 6.73661H10.0179C10.0043 7.05404 9.90947 7.36266 9.74243 7.63292C9.41627 8.14721 8.80182 8.49842 7.91514 8.67563L7.39957 8.77835V10.589H8.04162C9.82847 10.589 11.1916 10.0939 12.0924 9.11736ZM5.02524 9.11736C6.23744 7.80243 6.11481 6.11382 6.11096 6.09456V0.958097C6.11096 0.787813 6.04331 0.624503 5.9229 0.504094C5.80249 0.383685 5.63918 0.31604 5.4689 0.31604H1.61656C0.908369 0.31604 0.332443 0.891965 0.332443 1.60015V6.09456C0.332443 6.26484 0.400088 6.42815 0.520497 6.54856C0.640906 6.66897 0.804216 6.73661 0.9745 6.73661H2.95075C2.93719 7.05404 2.84235 7.36266 2.67531 7.63292C2.34914 8.14721 1.7347 8.49842 0.848015 8.67563L0.332443 8.77835V10.589H0.9745C2.76135 10.589 4.12443 10.0939 5.02524 9.11736Z"
+                                fill="#909091" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -410,7 +559,7 @@
                 <div class="col">
                     <ul>
                         <li>
-                            <img src="./assets/img/star.png" alt class="mb-4 mt-1" />
+                            <img src="./assets/img/star5.png" alt class="mb-4 mt-1" />
                         </li>
                         <li>
                             <p class="special">2.3 ribu orang memiliki pengalaman yang baik bersama kami!</p>
@@ -447,7 +596,7 @@
                     },
                     {
                         id: 3,
-                        desc: "Temukan berbagai macam olahan makanan, bumbu masak, dan suvenir yang kami buat dari berbagai hasil kelautan masyarakat pesisir dari berbagai desa di seluruh penjuru nusantara.",
+                        desc: "Temukan berbagai macam olahan makanan, bumbu masak, dan suvenir yang kami buat dari berbagai hasil kelautan masyarakat pesisir dari berbagai desa di seluruh nusantara.",
                         title: "Olahan Laut",
                         image: "./assets/img/catalog3.png"
 
@@ -457,38 +606,38 @@
 
         })
 
-        new Vue({
-            el: '#flash',
-            data: {
-                catalog: [{
-                        id: 1,
-                        desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
-                        title: "Ikan Gurame Porselen",
-                        image: "./assets/img/catalog4.png"
-                    },
-                    {
-                        id: 2,
-                        desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
-                        title: "Kepiting Belengkakem",
-                        image: "./assets/img/catalog1.png"
-                    },
-                    {
-                        id: 3,
-                        desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
-                        title: "Tuna albakora",
-                        image: "./assets/img/catalog2.png"
-                    },
-                    {
-                        id: 4,
-                        desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
-                        title: "Kepiting Gelenteng",
-                        image: "./assets/img/catalog3.png"
-                    },
+        // new Vue({
+        //     el: '#flash',
+        //     data: {
+        //         catalog: [{
+        //                 id: 1,
+        //                 desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
+        //                 title: "Ikan Gurame Porselen",
+        //                 image: "./assets/img/catalog4.png"
+        //             },
+        //             {
+        //                 id: 2,
+        //                 desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
+        //                 title: "Kepiting Belengkakem",
+        //                 image: "./assets/img/catalog1.png"
+        //             },
+        //             {
+        //                 id: 3,
+        //                 desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
+        //                 title: "Tuna albakora",
+        //                 image: "./assets/img/catalog2.png"
+        //             },
+        //             {
+        //                 id: 4,
+        //                 desc: " Temukan hasil yang kami tangkap dari berbagai penjuru laut Nusantara.Ikan dengan jenis Pelagis Besar, Pelagis Kecil, Demersal, dan Udang kami hadirkan untuk Anda. ",
+        //                 title: "Kepiting Gelenteng",
+        //                 image: "./assets/img/catalog3.png"
+        //             },
 
-                ],
-            }
+        //         ],
+        //     }
 
-        })
+        // })
 
         new Vue({
             el: '#rec',

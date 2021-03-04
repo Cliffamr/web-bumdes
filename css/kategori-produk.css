@@ -1,0 +1,67 @@
+body {
+    /* margin-bottom: 2000px; */
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* PRODUK */
+.produk .cardz {
+    margin-top: 20px !important;
+}
+
+/* FILTER */
+.filter {
+    background: #E5EDFC;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    z-index: 9;
+    font-size: 20px;
+}
+
+.filter-title h1 {
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* .container-wrapper {
+    background: #3875E320;
+} */
+
+.kategori-filter-wrapper {
+    text-align: center;
+}
+
+.kategori-filter-wrapper p {
+    padding: 15px 0;
+    width: 140px;
+    font-size: 20px;
+    text-align: center;
+    color: #A4A4A4;
+    margin: 0;
+    border-bottom: 3px #3875E310 solid;
+}
+
+.kategori-filter-wrapper p:hover {
+    cursor: pointer;
+    border-bottom: 3px #3875E350 solid;
+}
+
+.borderBottomActive {
+    font-weight: 600;
+    color: #3875E3 !important;
+    border-bottom: 3px #3875E3 solid !important;
+}
+
+/* .kategori-filter-wrapper p::after {
+    content: '';
+    display: block;
+    background: #3875E3;
+    height: 3px;
+    width: 100%;
+    margin: auto;
+} */

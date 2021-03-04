@@ -13,7 +13,7 @@ footer {
     z-index: -999px;
     padding-top: 100px;
     padding-bottom: 50px;
-    background: #1c9ba2;
+    background: #0E0B32;
 }
 
 footer a {
@@ -63,7 +63,7 @@ footer ul li .special {
 
 /* REC */
 .rec {
-    background: #51C2D5;
+    background: #3875E3;
 }
 
 .rec .btn-next {
@@ -73,13 +73,13 @@ footer ul li .special {
 
 .rec .btn-next:hover {
     transition: .3s;
-    background: rgb(205, 203, 203) !important;
+    background: #ffffff50 !important;
     cursor: pointer;
 
 }
 
 .rec .btn-prev {
-    background: #51C2D5 !important;
+    background: #3875E3 !important;
     border: solid 2px white !important;
 }
 
@@ -88,6 +88,7 @@ footer ul li .special {
 .rec .subtitle,
 .rec .more {
     color: white !important;
+
 }
 
 /* FLASH */
@@ -96,7 +97,7 @@ footer ul li .special {
     font-weight: bold;
     font-size: 16px;
     margin-top: 10px;
-    color: #51C2D5;
+    color: #3875E3;
 }
 
 .flash .cardz {
@@ -114,7 +115,7 @@ footer ul li .special {
 }
 
 .flash .cardz span {
-    color: #51C2D5;
+    color: #3875E3;
 }
 
 .flash .cardz-body p {
@@ -124,7 +125,7 @@ footer ul li .special {
 }
 
 .flash .cardz-body p span {
-    color: #51C2D5;
+    color: #3875E3;
 }
 
 .flash .cardz-body {
@@ -137,7 +138,7 @@ footer ul li .special {
 }
 
 .flash .btn-prev {
-    border: 2px solid #51C2D5;
+    border: 2px solid #3875E3;
     border-radius: 8px;
     background: white;
     width: 52px;
@@ -152,8 +153,8 @@ footer ul li .special {
 
 .flash .btn-next {
     text-align: center;
-    background: #51C2D5;
-    border: 2px solid #51C2D5;
+    background: #3875E3;
+    border: 2px solid #3875E3;
     border-radius: 8px;
     width: 52px;
     height: 52px;
@@ -163,16 +164,16 @@ footer ul li .special {
 
 .flash .btn-next:hover {
     transition: .3s;
-    background: rgb(66, 161, 177) !important;
+    background: rgb(6, 80, 216) !important;
     cursor: pointer;
-    border: 2px solid #51C2D5;
+    border: 2px solid #3875E3;
 }
 
 
 .flash h3 {
     font-weight: 700;
     font-size: 30px;
-    color: #51C2D5;
+    color: #3875E3;
 }
 
 .flash h4 {
@@ -185,7 +186,7 @@ footer ul li .special {
     margin-bottom: -5px;
     font-weight: bold;
     font-size: 16px;
-    background: #51C2D5;
+    background: #3875E3;
     padding: 6px 20px;
     border-radius: 4px;
     color: white;
@@ -201,9 +202,19 @@ footer ul li .special {
 }
 
 /* CAT */
+@media (min-width: 1200px) {
+    .category .container {
+        max-width: 1200px;
+    }
+}
 
 #category {
-    background: #ecf9fc;
+    background: #C4C4C420;
+}
+
+#category .kategory-desc {
+    text-align: center;
+    /* text-justify: inter-word; */
 }
 
 #category hr:hover {
@@ -219,28 +230,39 @@ footer ul li .special {
 }
 
 #category .card {
-    background: none;
+    background: white;
     border: none;
-    border-top: 6px solid #ecf9fc;
+    padding-left: 10px;
+    border-top: 6px solid #ecf9fc10;
     transition: .3s;
 }
 
 #category .card:hover {
     /* background: #a3e2f023; */
-
     cursor: pointer;
     border: none;
-    border-top: 6px solid #9ddfee;
+    background: #3875E370;
+    border-top: 6px solid rgb(6, 80, 216);
+    transition: .3s;
+}
+
+
+#category .card:hover .title,
+#category .card:hover p {
+    color: white;
     transition: .3s;
 }
 
 /* NAV */
+nav {}
+
 .navbar {
+    background: white !important;
     position: fixed;
     z-index: 999;
     top: 0;
     width: 100%;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .04);
 }
 
 nav ul li a {
