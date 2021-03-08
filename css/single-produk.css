@@ -2,6 +2,126 @@ single-product {
     background: #f0f5fa;
 }
 
+body {
+    margin-bottom: 2000px;
+}
+
+.single-filter-wrapper p {
+    padding: 15px 0;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    color: #A4A4A4;
+    margin: 0;
+    border-bottom: 3px #3875E310 solid;
+}
+
+.single-filter-wrapper p:hover {
+    cursor: pointer;
+    border-bottom: 3px #3875E350 solid;
+}
+
+.durationActive {
+    background: rgb(94, 225, 146) !important;
+    color: white !important;
+    border: rgb(94, 225, 146) 1px solid !important;
+}
+
+.fastDuration,
+.normalDuration {
+    margin-right: 15px;
+    border: #3875E3 1px solid;
+    color: #3875E3;
+    height: 55px;
+    line-height: 55px;
+    padding-left: 10px;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.fastDuration:hover {
+    cursor: pointer;
+}
+
+.normalDuration:hover {
+    cursor: pointer;
+}
+
+.deadButton {
+    background: #C4C4C4 !important;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    background: red;
+}
+
+select {
+    color: #3875E3;
+    width: 90%;
+    outline: none;
+    border: none;
+    height: 100%;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.pathLoveActive {
+    fill: #FF7373 !important;
+}
+
+.single .path-love:hover {
+    fill: #FF737350;
+    cursor: pointer;
+}
+
+.single .button-wrapper:hover .path {
+    fill: #fff;
+    transition: .3s;
+}
+
+.icon-wrapper-love {
+    line-height: 50px;
+}
+
+.button-wrapper {
+    border: none;
+    border-radius: 4px;
+    border: solid 1.5px #3875E3;
+    background: none;
+    padding: 18px 0px;
+    text-align: center;
+    width: 250px;
+    transition: .3s;
+}
+
+.button-wrapper:hover {
+    background: #3875E3;
+    transition: .3s;
+}
+
+.button-wrapper:hover .chat {
+    color: white;
+    transition: .3s;
+}
+
+.button-wrapper:hover {
+    cursor: pointer;
+}
+
+.icon-wrapper-love {
+    background: #E8EFF7;
+    top: 10px;
+    width: 50px;
+    right: 25px;
+    height: 50px;
+    border-radius: 4px;
+    position: absolute;
+}
+
 * {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
@@ -12,6 +132,23 @@ single-product {
     .container {
         max-width: 1350px;
     }
+}
+
+/* .list-style-wrapper {
+    display: flex;
+} */
+
+.lala .list-style {
+    margin-right: 10px;
+    border-radius: 2000px;
+    height: 5px;
+    width: 5px;
+    background: black;
+}
+
+.lala .list-style+p {
+    font-size: 16px;
+    margin-right: 20px;
 }
 
 .icon-wrapper img {
@@ -209,37 +346,38 @@ ul li {
     border: none;
     border-radius: 4px;
     font-weight: bold;
-    background: #1c9ba2;
+    background: #3875E3;
     font-size: 20px;
     padding: 20px 0px;
     width: 250px;
 }
 
 .setting-wrapper .chat {
-    color: #1c9ba2;
+    color: #3875E3;
+    margin-left: 5px;
     border: none;
-    border-radius: 4px;
-    border: solid 1.5px #1c9ba2;
+    /* border-radius: 4px;
+    border: solid 1.5px #3875E3; */
     font-weight: bold;
     background: none;
     font-size: 20px;
-    padding: 20px 0px;
-    width: 250px;
+    /* padding: 20px 0px; */
+    /* width: 250px; */
     transition: 0.3s;
 }
 
 .setting-wrapper .rent-now:hover {
-    background: #13656a;
+    background: rgb(43, 90, 177);
     cursor: pointer;
     transition: 0.3s;
 }
 
-.setting-wrapper .chat:hover {
-    background: #13656a;
+/* .setting-wrapper .chat:hover {
+    background: #3875E3;
     cursor: pointer;
     transition: 0.3s;
     color: white;
-}
+} */
 
 .until {
     border-radius: 4px;
@@ -273,24 +411,45 @@ ul li {
     color: #1c9ba2;
 }
 
-/* .dropdown-toggle {
-    background: none;
-    color: #49afb5 !important;
-    border: solid 1px #49afb5;
-    padding: 14px 36px 14px 13px;
-} */
+.price-wrapper .dropdown {
+    background: white;
+    /* text-align: center; */
+    width: 100px;
+    border: #3875E3 1px solid;
+    border-radius: 4px;
+    line-height: 55px;
+    padding-left: 10px;
+    height: 55px;
+}
+
+.price-wrapper .dropdown p {
+    color: #3875E3;
+}
+
+
+.dropdown-toggle {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
 
 .price-wrapper h1 {
-    color: #1c9ba2;
-    font-size: 60px;
+    color: #3875E3;
+    font-size: 50px;
+}
+
+.price-wrapper .name-katalog {
+    color: #1A1A1A;
+    margin-bottom: 20px;
 }
 
 .price-wrapper .first-price {
     font-weight: 300;
-    font-size: 23.625px;
+    font-size: 21px;
     margin: 0;
     text-decoration: line-through;
-    color: #010223;
+    color: #A4A4A4;
+
 }
 
 .setting-wrapper .title {
@@ -303,9 +462,6 @@ ul li {
 
 .setting p {
     padding: 13px 30px;
-    background: #e8eff7;
-    border-top: solid 1px #c4c4c4;
-    border-bottom: solid 1px #c4c4c4;
     font-size: 17px;
 }
 
@@ -314,6 +470,17 @@ ul li {
     width: 55px;
     height: 55px;
     border: solid 1px #c4c4c4;
+    border-radius: 8px;
+}
+
+.setting .pagination-next {
+    background: #3875E350;
+    transition: .3s;
+}
+
+.setting .pagination-next:hover {
+    transition: .3s;
+    background: #3875E380;
 }
 
 .list-photo {

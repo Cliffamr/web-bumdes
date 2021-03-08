@@ -92,107 +92,107 @@
         </div>
     </section>
     <!-- END BREAD CRUMB -->
+    <!-- <div class="row price-wrapper">
+        <div class="container">
+            <div>
+                <h1 class="name-katalog mb-4">Kepiting Bakau</h1>
+            </div>
+        </div>
+    </div> -->
 
-    <section class="single">
+    <section class="single lala">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h2>Mesin Cuci Modern</h2>
-                </div>
-            </div>
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-11">
-                    <div class="content d-flex">
-                        <div class="detail d-flex">
-                            <p class="title">Mitra</p>
-                            <p class="mx-2">:</p>
-                            <p class="sub-title primarycolorsemibold">Desa Belawan Bahari, Sumatra Utara</p>
-                            <p class="mx-3">|</p>
-                        </div>
-                        <div class="detail d-flex">
-                            <p class="title">Maksimal Tangkapan</p>
-                            <p class="mx-2">:</p>
-                            <p class="sub-title">700 Kg</p>
-                            <p class="mx-3">|</p>
-                        </div>
-                        <div class="detail d-flex">
-                            <p class="title">Ulasan</p>
-                            <p class="mx-2">:</p>
-                            <p class="sub-title">
-                                <img class="mb-1" src="./assets/img/star.png" alt />
-                                4/5 ( 500 )
-                            </p>
-                            <p class="mx-3">|</p>
-                        </div>
+                <div style="position: relative;" class="col-lg-4">
+                    <div class="icon-wrapper-love text-center">
+                        <svg width="32" height="28" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path @click="activatedIconLove" v-bind:class="{pathLoveActive : iconLoveActive }"
+                                class="path-love"
+                                d="M20.7687 31.3366C19.3785 32.5988 17.2382 32.5988 15.848 31.3183L15.6468 31.1353C6.04312 22.4463 -0.231272 16.7573 0.00653242 9.65973C0.116289 6.54998 1.70775 3.56827 4.28702 1.81217C9.11629 -1.48051 15.0797 0.0560747 18.2992 3.82437C21.5187 0.0560747 27.4821 -1.4988 32.3114 1.81217C34.8907 3.56827 36.4821 6.54998 36.5919 9.65973C36.848 16.7573 30.5553 22.4463 20.9517 31.1719L20.7687 31.3366Z"
+                                fill="#C4C4C4" />
+                        </svg>
+
                     </div>
-                </div>
-                <!-- <div class="col-lg-5 text-right">
-                    <div class="img-wrapper">
-                        <img src="img/love.svg" alt />
-                    </div>
-                </div> -->
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="line"></div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-4">
-                    <img class="img-fluid" :src="imageDefault" width="100%" alt />
+                    <img class="img-fluid" src="./assets/img/imageMain.png" width="100%" alt />
                     <div class="list-photo justify-content-between d-flex">
-                        <img @click="changeImage(thumbs[0])" src="img/mini-mesin-cuci.png" alt />
-                        <img @click="changeImage(thumbs[1])" src="img/mesin-cuci-2-mini.png" alt />
-                        <img src="img/mini-mesin-cuci-3.png" alt />
-                        <img src="img/play.png" alt />
+                        <img src="./assets/img/mini-mesin-cuci.png" alt />
+                        <img src="./assets/img/mini-mesin-cuci.png" alt />
+                        <img src="./assets/img/mini-mesin-cuci.png" alt />
+                        <img src="./assets/img/mini-mesin-cuci.png" alt />
                     </div>
                 </div>
                 <div class="col-lg-8 price-wrapper">
+                    <div>
+                        <h1 class="name-katalog">Kepiting Bakau</h1>
+                    </div>
                     <p class="first-price">Rp 298.000</p>
-                    <h1>Rp 10.000 / kg</h1>
+                    <h1> Rp {{ normalPrice }} / kg</h1>
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center">
+                            <div class="list-style"></div>
+                            <p class="mb-0">Maksimal Pesanan <b>700kg</b></span></p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="list-style"></div>
+                            <p class="mb-0">Harga menyesuaikan durasi penangkapan</p>
+                        </div>
+                    </div>
                     <div class="line"></div>
                     <div class="setting-wrapper d-flex">
-                        <div>
+                        <div style="margin-right: 20px;">
                             <p class="title">Jumlah Pesanan / kg</p>
                             <div class="d-flex align-items-center setting">
-                                <button>
-                                    <img src="img/minus.svg" alt />
+                                <button v-bind:class="{ deadButton : deadButton }" @click="decOrder">
+                                    <img src="./assets/img/minus.png" alt />
                                 </button>
-                                <p class="m-0">1</p>
-                                <button>
-                                    <img src="img/plus.svg" alt />
+                                <p class="m-0">{{ minOrder }}</p>
+                                <button @click="incOrder" class="pagination-next">
+                                    <img src="./assets/img/plus.png" alt />
                                 </button>
                             </div>
                         </div>
-                        <div class="ml-4">
-                            <p class="title">Durasi Penangkapan</p>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                        <div style="position: relative;" class="ml-4">
+                            <p class="title">Durasi Penangkapan : <b>{{ duration }}</b></p>
+                            <div class="d-flex">
+                                <p @click="durationtoggle = 'normal';priceTriggerNormal(); "
+                                    v-bind:class="{ durationActive : durationtoggle === 'normal' }"
+                                    class="normalDuration">Normal</p>
+                                <p @click="durationtoggle = 'fast'; priceTriggerFast(); "
+                                    v-bind:class="{ durationActive : durationtoggle === 'fast' }"
+                                    class=" fastDuration m-0">Cepat</p>
                             </div>
                         </div>
                     </div>
                     <div class="setting-wrapper d-flex mt-5">
                         <router-link to="/cart">
-                            <button class="rent-now mr-3">Sewa Sekarang</button>
+                            <button style="margin-right: 20px;" class="rent-now">Sewa Sekarang</button>
                         </router-link>
-                        <button class="chat">Hubungi Merchant</button>
+                        <div class="button-wrapper">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="path"
+                                    d="M25.0771 18.6342H8.39043L9.22827 16.9473L23.1493 16.9224C23.62 16.9224 24.0235 16.59 24.1076 16.1302L26.0355 5.46328C26.0859 5.18352 26.0102 4.89545 25.8253 4.67663C25.7339 4.56893 25.6199 4.48218 25.4912 4.4224C25.3625 4.36261 25.2221 4.33121 25.0799 4.33039L7.37045 4.27222L7.21914 3.56866C7.12387 3.11994 6.71475 2.79309 6.2496 2.79309H1.92031C1.65797 2.79309 1.40637 2.89611 1.22087 3.07947C1.03537 3.26284 0.931152 3.51155 0.931152 3.77087C0.931152 4.03019 1.03537 4.27889 1.22087 4.46226C1.40637 4.64563 1.65797 4.74864 1.92031 4.74864H5.44819L6.10949 7.85648L7.73753 15.6482L5.64154 19.0303C5.53269 19.1755 5.46713 19.3479 5.45227 19.5281C5.43742 19.7082 5.47386 19.8889 5.55747 20.0496C5.7256 20.3792 6.06466 20.587 6.44015 20.587H8.19988C7.82473 21.0795 7.6221 21.6795 7.62265 22.296C7.62265 23.8638 8.91163 25.1379 10.4976 25.1379C12.0836 25.1379 13.3726 23.8638 13.3726 22.296C13.3726 21.6783 13.1653 21.0772 12.7954 20.587H17.3096C16.9345 21.0795 16.7318 21.6795 16.7324 22.296C16.7324 23.8638 18.0214 25.1379 19.6074 25.1379C21.1934 25.1379 22.4824 23.8638 22.4824 22.296C22.4824 21.6783 22.275 21.0772 21.9051 20.587H25.0799C25.6235 20.587 26.0691 20.1493 26.0691 19.6092C26.0675 19.3501 25.9622 19.1022 25.7764 18.9196C25.5906 18.7369 25.3392 18.6343 25.0771 18.6342ZM10.4976 23.1713C10.0101 23.1713 9.61216 22.778 9.61216 22.296C9.61216 21.814 10.0101 21.4207 10.4976 21.4207C10.9852 21.4207 11.3831 21.814 11.3831 22.296C11.3831 22.5281 11.2898 22.7508 11.1238 22.9149C10.9577 23.0791 10.7325 23.1713 10.4976 23.1713ZM19.6074 23.1713C19.1198 23.1713 18.7219 22.778 18.7219 22.296C18.7219 21.814 19.1198 21.4207 19.6074 21.4207C20.0949 21.4207 20.4928 21.814 20.4928 22.296C20.4928 22.5281 20.3995 22.7508 20.2335 22.9149C20.0674 23.0791 19.8422 23.1713 19.6074 23.1713Z"
+                                    fill="#3875E3" />
+                                <path d="M15.75 12.75L15.75 10.5L15.75 8.25" stroke="#E8EFF7" stroke-width="2"
+                                    class="path" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.5 10.5L15.75 10.5L18 10.5" stroke="#E8EFF7" stroke-width="2" class="path"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <button class="chat">Masukan Keranjang</button>
+                        </div>
                     </div>
                     <div class="setting-wrapper mt-4">
                         <p class="title">Merchant</p>
                         <div class="d-flex align-items-center merchant">
-                            <img src="img/eve-store.png" class="mr-3" alt />
-                            <div class>
-                                <h4 class="mb-0">Eve Store</h4>
+                            <img src="./assets/img/eve-store.png" class="mr-3" alt />
+                            <div style="margin-left:20px;">
+                                <h4 class="mb-0">Belawan Bahari</h4>
                                 <p class="m-0">
-                                    <span>57K</span> Pengikut
+                                    <span>Kec. Medan Belawan, Prov. Sumatra Utara</span>
+                                </p>
+                                <p class="m-0">
+                                    <a href="#">Tanya mitra tentang produk ini </a>
                                 </p>
                             </div>
                         </div>
@@ -202,6 +202,21 @@
         </div>
     </section>
 
+    <section id="filter" class="filter mt-5">
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="row single-filter-wrapper">
+                    <div class="col-lg-2">
+                        <p @click=" cek = 'cumi' " v-bind:class="{borderBottomActive: cek === 'cumi'}">Deskripsi Produk
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+                        <p @click=" cek = 'gurita' " v-bind:class="{borderBottomActive: cek === 'gurita'}">Ulasan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -212,6 +227,48 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+    <script>
+        new Vue({
+            el: '.single',
+            data: {
+                iconLoveActive: false,
+                minOrder: 700,
+                normalPrice: "10.000",
+                duration: "Normal",
+                durationtoggle: 'normal'
+            },
+            methods: {
+                activatedIconLove() {
+                    if (this.iconLoveActive === false) {
+                        this.iconLoveActive = true
+                    } else {
+                        this.iconLoveActive = false
+                    }
+                },
+                incOrder() {
+                    this.minOrder++
+                },
+                decOrder() {
+                    if (this.minOrder <= 700) {
+                        this.minOrder = 700
+                    } else {
+                        this.minOrder--
+                    }
+                },
+                priceTriggerFast() {
+                    this.normalPrice = "20.000"
+                    this.duration = "Cepat"
+                },
+                priceTriggerNormal() {
+                    this.normalPrice = "10.000"
+                    this.duration = "Normal"
+                },
+
+            },
+
+        })
     </script>
 
 </body>
