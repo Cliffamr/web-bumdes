@@ -104,21 +104,24 @@
         <div class="container">
             <div class="row">
                 <div style="position: relative;" class="col-lg-4">
-                    <div class="icon-wrapper-love text-center">
-                        <svg width="32" height="28" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path @click="activatedIconLove" v-bind:class="{pathLoveActive : iconLoveActive }"
-                                class="path-love"
-                                d="M20.7687 31.3366C19.3785 32.5988 17.2382 32.5988 15.848 31.3183L15.6468 31.1353C6.04312 22.4463 -0.231272 16.7573 0.00653242 9.65973C0.116289 6.54998 1.70775 3.56827 4.28702 1.81217C9.11629 -1.48051 15.0797 0.0560747 18.2992 3.82437C21.5187 0.0560747 27.4821 -1.4988 32.3114 1.81217C34.8907 3.56827 36.4821 6.54998 36.5919 9.65973C36.848 16.7573 30.5553 22.4463 20.9517 31.1719L20.7687 31.3366Z"
-                                fill="#C4C4C4" />
-                        </svg>
+                    <div class="main-image-wrapper">
+                        <div class="icon-wrapper-love text-center">
+                            <svg width="32" height="28" viewBox="0 0 37 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path @click="activatedIconLove" v-bind:class="{pathLoveActive : iconLoveActive }"
+                                    class="path-love"
+                                    d="M20.7687 31.3366C19.3785 32.5988 17.2382 32.5988 15.848 31.3183L15.6468 31.1353C6.04312 22.4463 -0.231272 16.7573 0.00653242 9.65973C0.116289 6.54998 1.70775 3.56827 4.28702 1.81217C9.11629 -1.48051 15.0797 0.0560747 18.2992 3.82437C21.5187 0.0560747 27.4821 -1.4988 32.3114 1.81217C34.8907 3.56827 36.4821 6.54998 36.5919 9.65973C36.848 16.7573 30.5553 22.4463 20.9517 31.1719L20.7687 31.3366Z"
+                                    fill="#C4C4C4" />
+                            </svg>
 
-                    </div>
-                    <img class="img-fluid" src="./assets/img/imageMain.png" width="100%" alt />
-                    <div class="list-photo justify-content-between d-flex">
-                        <img src="./assets/img/mini-mesin-cuci.png" alt />
-                        <img src="./assets/img/mini-mesin-cuci.png" alt />
-                        <img src="./assets/img/mini-mesin-cuci.png" alt />
-                        <img src="./assets/img/mini-mesin-cuci.png" alt />
+                        </div>
+                        <img class="img-fluid image-main" src="./assets/img/imageMain.png" width="100%" alt />
+                        <div class="list-photo justify-content-between d-flex">
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-8 price-wrapper">
@@ -163,10 +166,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="setting-wrapper d-flex mt-5">
-                        <router-link to="/cart">
-                            <button style="margin-right: 20px;" class="rent-now">Sewa Sekarang</button>
-                        </router-link>
+                    <div class="setting-wrapper d-flex mt-3">
+                        <button style="margin-right: 20px;" class="rent-now">Pesan Langsung</button>
                         <div class="button-wrapper">
                             <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -202,21 +203,232 @@
         </div>
     </section>
 
-    <section id="filter" class="filter mt-5">
-        <div class="container-wrapper">
-            <div class="container">
-                <div class="row single-filter-wrapper">
-                    <div class="col-lg-2">
-                        <p @click=" cek = 'cumi' " v-bind:class="{borderBottomActive: cek === 'cumi'}">Deskripsi Produk
-                        </p>
-                    </div>
-                    <div class="col-lg-2">
-                        <p @click=" cek = 'gurita' " v-bind:class="{borderBottomActive: cek === 'gurita'}">Ulasan</p>
+    <div class="descUlasan">
+        <section id="filter" class="filter mt-5">
+            <div class="container-wrapper">
+                <div class="container">
+                    <div class="row single-filter-wrapper justify-content-center">
+                        <div class="col-lg-2">
+                            <p @click=" lala1 " v-bind:class="{borderBottomActive: cek === 'desc'}">
+                                Deskripsi
+                                Produk
+                            </p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p @click=" lala2 " v-bind:class="{borderBottomActive: cek === 'ulasan'}">
+                                Ulasan
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="description mt-5 pb-5" :class="{descNonaktif : nonaktif}">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Mesin Cuci,Palmolive Naturals menggunakan bahan dasar terbaik untuk menjadikan kulit Anda
+                            bersih
+                            dan terasa lebih lembut. Palmolive Naturals Milk & Black Orchid diperkaya dengan kebaikan
+                            protein susu dan ekstrak anggrek hitam yang eksotis. Formulanya yang kaya mengandung
+                            pembersih
+                            ringan yang membantu melembabkan dan merawat kulit Anda dalam satu langkah mudah.
+                            Kulit yang lebih lembut dan halus dengan Palmolive Naturals setiap kali Anda mandi
+                        </p>
+                        <ul class="m-0 p-0">
+                            <li style>
+                                <b>Spesifikasi</b>
+                            </li>
+                            <li>Kapasitass : 7kg</li>
+                            <li>Teknologi Inverter : Non-inverte</li>
+                            <li>Type of Washing Machine : Twin Tub Semi-Auto</li>
+                            <li>Kecepatan Putaran (RPM) : 1</li>
+                            <li>Energy Consumption : (W)380</li>
+                        </ul>
+                        <ul class="mt-4 p-0">
+                            <li>
+                                <b>Cara Pakai</b>
+                            </li>
+                            <li>
+                                Tuang sabun ke tangan atau ke shower puff, lalu usapkan ke seluruh badan. Bilas hingga
+                                bersih dengan air.
+                                Kandungan : Water, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Fragrance, Sodium
+                                Cholride, Cocamide MEA, Styrene / Acrylates Copolymer, Sodium Salicylate, Sodium
+                                Benzoate,
+                                Polyquaternium-7, Glycol Distearate, Tetrasodium EDTA, Citric Acid, Lactose, Poloxamer
+                                124,
+                                Honey, Milk Protein, CI 19140, CI 16035
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ulasan mt-5" :class="{descNonaktif : nonaktif2 === 'asu'}">
+            <div class=" container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <p>Filter :</p>
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">1</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">2</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">3</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">4</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-5">
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center filter-list">
+                                <p class="mb-0">Semua</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <p class="mb-0">Dengan Media</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row mb-5">
+                    <div class="col">
+                        <p>Total Ulasan : 5</p>
+                    </div>
+                </div>
+                <div class="row review mb-5" v-for="myReview in review" v-bind:key="myReview.id">
+                    <div class="col-lg-3">
+                        <div class="d-flex align-items-center">
+                            <img class="" src="./assets/img/profil-testimoni.png" alt />
+                            <div style="margin-left: 15px;" class="ml-3">
+                                <p class="m-0 mt-1 name">{{myReview.name}}</p>
+                                <p class="m-0 date">{{ myReview.date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col right-content">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center star-wrapper">
+                                <img class="mr-1" src="./assets/img/star.png" alt />
+                                <p style="margin-left: 5px;" class="mb-0 mt-1">{{ myReview.stars }}</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="icon-wrapper mr-4 d-flex align-items-center">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-mini-love"
+                                            d="M8.65079 17.4734C9.4105 18.1772 10.5801 18.1772 11.3398 17.4632L11.4497 17.3612C16.6977 12.5162 20.1264 9.34395 19.9964 5.38631C19.9365 3.6523 19.0668 1.98968 17.6573 1.01048C15.0183 -0.82554 11.7596 0.0312675 10.0003 2.13249C8.24095 0.0312675 4.9822 -0.83574 2.34322 1.01048C0.933762 1.98968 0.0640965 3.6523 0.00411797 5.38631C-0.135828 9.34395 3.30285 12.5162 8.55083 17.3816L8.65079 17.4734Z"
+                                            fill="#999999" />
+                                    </svg>
+
+                                    <p class="m-0">{{ myReview.likes }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-1">{{ myReview.desc }}</p>
+                    </div>
+                </div>
+                <div class="row see">
+                    <div class="col-lg-3"></div>
+                    <div class="col">
+                        <a href="#">Lihat Semua</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h4>Terasera</h4>
+                        </li>
+                        <li>
+                            <p class="special">Berbagai produksi kelautan kami sediakan disini. Temukan apa yang kamu
+                                cari.</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/icon1.png" alt />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon2.png" alt />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon3.png" alt />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon4.png" alt />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="margin-left: 50px;" class="col">
+                    <ul>
+                        <li>
+                            <h4>Jelajahi</h4>
+                        </li>
+                        <li>
+                            <p>Tentang Kami</p>
+                            <p>Karir</p>
+                            <p>Panduan Penggunaan</p>
+                            <p>Pemasangan Iklan</p>
+                            <p>Ulasan</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h4>Layanan Pelanggan</h4>
+                        </li>
+                        <li>
+                            <p>Bantuan</p>
+                            <p>Hubungi Kami</p>
+                            <p>Pengaduan</p>
+                            <p>Hak dan Kebijakan</p>
+                            <p>FQA</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <img src="./assets/img/star5.png" alt class="mb-4 mt-1" />
+                        </li>
+                        <li>
+                            <p class="special">2.3 ribu orang memiliki pengalaman yang baik bersama kami!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top:100px;font-size:14px;">
+                <p style="color: #ececec;">© 2021 TERASERA ALL RIGHTS RESERVED</p>
+            </div>
         </div>
-    </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -230,6 +442,92 @@
     </script>
 
     <script>
+        new Vue({
+            el: '.descUlasan',
+            data: {
+                nonaktif: false,
+                nonaktif2: 'asu',
+                cek: 'desc',
+            },
+
+            methods: {
+                lala1() {
+                    this.nonaktif = false;
+                    this.nonaktif2 = true;
+
+                    this.cek = 'desc';
+                },
+                lala2() {
+                    // this.nonaktif = true;
+                    // this.nonaktif2 = 'sdsd';
+
+                    // this.cek = 'ulasan';
+                }
+            }
+        })
+
+        new Vue({
+            el: '.ulasan',
+            data: {
+                review: [{
+                        id: 1,
+                        stars: 5,
+                        desc: "Cepat sekali pengiriman barang nya, dan barang nya saya sangat suka. Dengan Mesin Cuci ini saya semakin bersemangat untuk melakukan pekerjaan saya yaitu designer freelancer",
+                        name: "Daffa Raihanz",
+                        date: "10-12-2020 02:30",
+                        likes: 100,
+                        comments: 70
+                    },
+                    {
+                        id: 2,
+                        stars: 5,
+                        desc: "Awalnya ragu buat beli, ternyata bener habis nyobain barang disni makin yakin aku buat beli barangnya sendiri. Makasih udah bantuin aku buat gak galau lagi.",
+                        name: "Dinda Maylan",
+                        date: "11-11-2020 11:12",
+                        likes: 80,
+                        comments: 10
+                    },
+                    {
+                        id: 3,
+                        stars: 4,
+                        desc: "Cepat sekali pengiriman barang nya, dan barang nya saya sangat suka. Dengan Mesin Cuci ini saya semakin bersemangat untuk melakukan pekerjaan saya yaitu designer freelancer",
+                        name: "Raihan Athaya",
+                        date: "01-11-2020 12:00",
+                        likes: 18,
+                        comments: 10
+                    },
+                    {
+                        id: 4,
+                        stars: 5,
+                        desc: "Produk yang dikirimkan sangat memperhatikan kualitasnya dengan pengiriman pesanan yang tergolong cepat. Ini sangat membantu saya, tidak perlu menunggu lama juga. ",
+                        name: "Dinda May",
+                        date: "10-12-2020 02:30",
+                        likes: 100,
+                        comments: 70
+                    },
+                    {
+                        id: 5,
+                        stars: 5,
+                        desc: "Cepat sekali pengiriman barang nya, dan barang nya saya sangat suka. Dengan Mesin Cuci ini saya semakin bersemangat untuk melakukan pekerjaan saya yaitu designer freelancer",
+                        name: "Daffa Raihanz",
+                        date: "10-12-2020 02:30",
+                        likes: 100,
+                        comments: 70
+                    }
+                ],
+                iconMiniLoveActive: false,
+            },
+            methods: {
+                activatedMiniLoveIcon() {
+                    if (this.iconLoveActive === false) {
+                        this.iconLoveActive = true
+                    } else {
+                        this.iconLoveActive = false
+                    }
+                },
+            }
+        })
+
         new Vue({
             el: '.single',
             data: {

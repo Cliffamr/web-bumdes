@@ -75,9 +75,127 @@
             </div>
         </nav>
     </div>
-
-
     <!-- END NAVBAR -->
+
+    <div class="row floats2">
+        <div class="row justify-content-end">
+            <div class="col-lg-4">
+                <div :class="{ myFloatWrapper : myFloatWrapper }" @click="removeHeightNone" class="lili px-3">
+                    <p :class="{ pesanText : pesanText }" class=" mb-0 my-float">Pesan</p>
+                    <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path v-bind:class="{ changeFill : changeFill }"
+                            d="M15.5006 8.78599e-07C18.1898 -0.000904426 20.8329 0.697822 23.1702 2.02752C25.5076 3.35723 27.4588 5.27215 28.8321 7.58415C30.2055 9.89615 30.9537 12.5257 31.0032 15.2143C31.0528 17.903 30.402 20.5583 29.1148 22.9193L30.949 29.3518C31.0135 29.5777 31.0152 29.8169 30.9539 30.0437C30.8927 30.2705 30.7707 30.4762 30.6012 30.6388C30.4316 30.8015 30.221 30.9148 29.9918 30.9666C29.7627 31.0184 29.5238 31.0067 29.3008 30.9328L23.261 28.9204C21.2024 30.11 18.8978 30.81 16.5254 30.9664C14.153 31.1228 11.7764 30.7314 9.57955 29.8223C7.38265 28.9133 5.42432 27.5111 3.85604 25.7241C2.28777 23.9372 1.15159 21.8134 0.535417 19.5171C-0.0807607 17.2208 -0.160424 14.8135 0.302589 12.4815C0.765601 10.1494 1.75888 7.95519 3.20558 6.06846C4.65228 4.18173 6.51362 2.65309 8.64562 1.60081C10.7776 0.548522 13.1231 0.000795536 15.5006 8.78599e-07V8.78599e-07ZM20.6673 12.9167C20.6673 12.5741 20.5312 12.2456 20.289 12.0033C20.0468 11.7611 19.7182 11.625 19.3756 11.625H11.6256C11.2831 11.625 10.9545 11.7611 10.7123 12.0033C10.4701 12.2456 10.334 12.5741 10.334 12.9167C10.334 13.2592 10.4701 13.5878 10.7123 13.83C10.9545 14.0722 11.2831 14.2083 11.6256 14.2083H19.3756C19.7182 14.2083 20.0468 14.0722 20.289 13.83C20.5312 13.5878 20.6673 13.2592 20.6673 12.9167ZM19.3756 16.7917H14.209C13.8664 16.7917 13.5379 16.9278 13.2956 17.17C13.0534 17.4122 12.9173 17.7408 12.9173 18.0833C12.9173 18.4259 13.0534 18.7544 13.2956 18.9967C13.5379 19.2389 13.8664 19.375 14.209 19.375H19.3756C19.7182 19.375 20.0468 19.2389 20.289 18.9967C20.5312 18.7544 20.6673 18.4259 20.6673 18.0833C20.6673 17.7408 20.5312 17.4122 20.289 17.17C20.0468 16.9278 19.7182 16.7917 19.3756 16.7917V16.7917Z"
+                            fill="#3875E3" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div v-bind:class="{ heightNone: changeHeight }" class="lalal d-flex">
+                <div class="col-lg-4">
+                    <div href="#" class="row row1">
+                        <div>
+                            <h2 class="mb-4 mt-1"> <b>Pesan</b></h2>
+                        </div>
+                        <div>
+                            <input placeholder="Cari Pengguna" class="input-chat" type="text">
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/img/eve-store-2.png" alt="">
+                                <div style="margin-left: 15px;">
+                                    <p class="mb-0"> <b>Belawan Bahari</b> </p>
+                                    <p style="color: #C5C5C5;" class="mb-0">Lorem ipsum dolor sit amet, ...</p>
+                                </div>
+                            </div>
+                            <small style="color: #C5C5C5;margin-top:3px;" class="mb-0">4 Des</small>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/img/eve-store-2.png" alt="">
+                                <div style="margin-left: 15px;">
+                                    <p class="mb-0"> <b>Belawan Bahari</b> </p>
+                                    <p style="color: #C5C5C5;" class="mb-0">Lorem ipsum dolor sit amet, ...</p>
+                                </div>
+                            </div>
+                            <small style="color: #C5C5C5;margin-top:3px;" class="mb-0">4 Des</small>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/img/eve-store-2.png" alt="">
+                                <div style="margin-left: 15px;">
+                                    <p class="mb-0"> <b>Belawan Bahari</b> </p>
+                                    <p style="color: #C5C5C5;" class="mb-0">Lorem ipsum dolor sit amet, ...</p>
+                                </div>
+                            </div>
+                            <small style="color: #C5C5C5;margin-top:3px;" class="mb-0">4 Des</small>
+                        </div>
+                        <div style="margin-bottom: 100px" class="d-flex">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/img/eve-store-2.png" alt="">
+                                <div style="margin-left: 15px;">
+                                    <p class="mb-0"> <b>Belawan Bahari</b> </p>
+                                    <p style="color: #C5C5C5;" class="mb-0">Lorem ipsum dolor sit amet, ...</p>
+                                </div>
+                            </div>
+                            <small class="mb-0">4 Des</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 nana">
+                    <div class="chat">
+                        <div class="chat-thread-wrapper d-flex">
+                            <img src="./assets/img/eve-store-2.png" alt="">
+                            <div style="margin-left: 15px;">
+                                <p class="mb-0"> <b>Belawan Bahari</b> </p>
+                                <p style="color: #C5C5C5" class="mb-0">Online 5 menit Lalu</p>
+                            </div>
+                        </div>
+                        <div class="chat-space"></div>
+                        <div class="send-wrapper d-flex">
+                            <input placeholder="Ketik pesan..." type="text">
+                            <div class="more-wrapper">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.20312 8.17188C6.4642 8.17188 6.71458 8.06816 6.89918 7.88356C7.08379 7.69895 7.1875 7.44857 7.1875 7.1875C7.1875 6.92643 7.08379 6.67605 6.89918 6.49144C6.71458 6.30684 6.4642 6.20312 6.20312 6.20312C5.94205 6.20312 5.69167 6.30684 5.50707 6.49144C5.32246 6.67605 5.21875 6.92643 5.21875 7.1875C5.21875 7.44857 5.32246 7.69895 5.50707 7.88356C5.69167 8.06816 5.94205 8.17188 6.20312 8.17188Z"
+                                        fill="#3875E3" />
+                                    <path
+                                        d="M6.05351 10.6879C5.99629 10.6228 5.92673 10.5696 5.84885 10.5316C5.77097 10.4935 5.68632 10.4712 5.59978 10.466C5.51324 10.4608 5.42654 10.4728 5.34467 10.5014C5.2628 10.5299 5.1874 10.5743 5.12281 10.6322C5.05822 10.69 5.00573 10.76 4.96837 10.8383C4.93101 10.9165 4.90952 11.0014 4.90514 11.0879C4.90075 11.1745 4.91357 11.2611 4.94285 11.3427C4.97212 11.4243 5.01728 11.4993 5.0757 11.5633C5.50633 12.0454 6.03404 12.431 6.62419 12.6947C7.21435 12.9585 7.8536 13.0945 8.50001 13.0937C9.14642 13.0945 9.78568 12.9585 10.3758 12.6947C10.966 12.431 11.4937 12.0454 11.9243 11.5633C12.0385 11.4334 12.0968 11.2636 12.0864 11.0909C12.0761 10.9182 11.998 10.7566 11.8691 10.6412C11.7402 10.5258 11.571 10.466 11.3982 10.4747C11.2254 10.4835 11.0631 10.5601 10.9465 10.6879C10.639 11.0326 10.262 11.3082 9.84037 11.4966C9.41869 11.6851 8.96188 11.7821 8.50001 11.7812C7.52876 11.7812 6.65595 11.3599 6.05351 10.6879Z"
+                                        fill="#3875E3" />
+                                    <path
+                                        d="M11.7812 7.1875C11.7812 7.44857 11.6775 7.69895 11.4929 7.88356C11.3083 8.06816 11.0579 8.17188 10.7969 8.17188C10.5358 8.17188 10.2854 8.06816 10.1008 7.88356C9.91621 7.69895 9.8125 7.44857 9.8125 7.1875C9.8125 6.92643 9.91621 6.67605 10.1008 6.49144C10.2854 6.30684 10.5358 6.20313 10.7969 6.20312C11.0579 6.20313 11.3083 6.30684 11.4929 6.49144C11.6775 6.67605 11.7812 6.92643 11.7812 7.1875Z"
+                                        fill="#3875E3" />
+                                    <path
+                                        d="M16.375 8.5C16.375 7.46584 16.1713 6.44181 15.7756 5.48637C15.3798 4.53093 14.7997 3.6628 14.0685 2.93153C13.3372 2.20027 12.4691 1.6202 11.5136 1.22445C10.5582 0.828693 9.53416 0.625 8.5 0.625C7.46584 0.625 6.44181 0.828693 5.48637 1.22445C4.53093 1.6202 3.6628 2.20027 2.93153 2.93153C2.20027 3.6628 1.6202 4.53093 1.22445 5.48637C0.828693 6.44181 0.625 7.46584 0.625 8.5C0.625 10.5886 1.45469 12.5916 2.93153 14.0685C4.40838 15.5453 6.41142 16.375 8.5 16.375C10.5886 16.375 12.5916 15.5453 14.0685 14.0685C15.5453 12.5916 16.375 10.5886 16.375 8.5ZM1.9375 8.5C1.9375 6.75952 2.6289 5.09032 3.85961 3.85961C5.09032 2.6289 6.75952 1.9375 8.5 1.9375C10.2405 1.9375 11.9097 2.6289 13.1404 3.85961C14.3711 5.09032 15.0625 6.75952 15.0625 8.5C15.0625 10.2405 14.3711 11.9097 13.1404 13.1404C11.9097 14.3711 10.2405 15.0625 8.5 15.0625C6.75952 15.0625 5.09032 14.3711 3.85961 13.1404C2.6289 11.9097 1.9375 10.2405 1.9375 8.5Z"
+                                        fill="#3875E3" />
+                                </svg>
+                            </div>
+                            <div class="more-wrapper">
+                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.2755 5.12496L5.51271 10.8877C5.34556 11.0491 5.21225 11.2422 5.12053 11.4558C5.02881 11.6693 4.98054 11.8989 4.97852 12.1313C4.9765 12.3636 5.02078 12.5941 5.10877 12.8091C5.19676 13.0242 5.3267 13.2196 5.49102 13.3839C5.65533 13.5482 5.85072 13.6782 6.06579 13.7661C6.28086 13.8541 6.5113 13.8984 6.74366 13.8964C6.97602 13.8944 7.20566 13.8461 7.41916 13.7544C7.63267 13.6627 7.82577 13.5294 7.98721 13.3622L13.5995 7.59946C14.237 6.93935 14.5898 6.05524 14.5818 5.13756C14.5738 4.21987 14.2058 3.34202 13.5568 2.6931C12.9079 2.04417 12.0301 1.67608 11.1124 1.6681C10.1947 1.66013 9.31056 2.01291 8.65046 2.65046L3.03733 8.41234C2.05268 9.39698 1.49951 10.7325 1.49951 12.125C1.49951 13.5175 2.05268 14.8529 3.03733 15.8376C4.02198 16.8222 5.35745 17.3754 6.74996 17.3754C8.14246 17.3754 9.47793 16.8222 10.4626 15.8376L15.9375 10.375"
+                                        stroke="#3875E3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="more-wrapper-plane">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0143 7.91599L1.57678 0.697237C1.46362 0.640647 1.33652 0.617972 1.21077 0.631944C1.08503 0.645916 0.966001 0.695938 0.868027 0.775987C0.774461 0.854404 0.704624 0.957366 0.666367 1.0733C0.62811 1.18923 0.622949 1.31353 0.651464 1.43224L2.39053 7.8438H9.81271V9.1563H2.39053L0.625214 15.5482C0.598456 15.6473 0.595333 15.7513 0.616095 15.8519C0.636857 15.9524 0.680925 16.0467 0.744756 16.1272C0.808587 16.2076 0.890399 16.2719 0.983614 16.315C1.07683 16.358 1.17885 16.3786 1.28146 16.375C1.38419 16.3744 1.48535 16.3497 1.57678 16.3029L16.0143 9.08411C16.1218 9.02904 16.212 8.94537 16.275 8.84232C16.338 8.73927 16.3713 8.62083 16.3713 8.50005C16.3713 8.37927 16.338 8.26083 16.275 8.15778C16.212 8.05473 16.1218 7.97106 16.0143 7.91599Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FLOATING -->
 
     <!-- JUMBOTRON -->
     <section class="jumbotron">
@@ -259,7 +377,7 @@
                         <div style="position: absolute; bottom: 25px">
                             <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
                             <h4>Rp 40.000/kg</h4>
-                            <p class="mb-0">Tidak Ada Minimum Pembelian</span> </p>
+                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">0</span> </p>
                         </div>
                     </div>
                 </div>
@@ -318,21 +436,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="item cardz">
-                    <div class="cardz-header">
-                        <img width="100%" class="img-fluid" src="./assets/img/catalog2.png" alt="">
-                    </div>
-                    <div class="cardz-body">
-                        <p class="mb-2">Tangkapan Laut Dari : <span class="primarycolorsemibold">Nusawungu, Jawa tengah
-                            </span> </p>
-                        <h4>Kepiting Belengkakem</h4>
-                        <div style="position: absolute; bottom: 25px">
-                            <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
-                            <h4>Rp 40.000/kg</h4>
-                            <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
+                <a style="text-decoration: none;" href="./single-produk.html">
+                    <div class="item cardz">
+                        <div class="cardz-header">
+                            <img width="100%" class="img-fluid" src="./assets/img/catalog2.png" alt="">
+                        </div>
+                        <div class="cardz-body">
+                            <p class="mb-2">Tangkapan Laut Dari : <span class="primarycolorsemibold">Nusawungu, Jawa
+                                    tengah
+                                </span> </p>
+                            <h4>Kepiting Belengkakem</h4>
+                            <div style="position: absolute; bottom: 25px">
+                                <p style="text-decoration: line-through;" class="mb-1 mt-4">Rp 25.000</p>
+                                <h4>Rp 40.000/kg</h4>
+                                <p class="mb-0">Minimum pembelian <span class="primarycolorsemibold">100kg</span> </p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="item cardz">
                     <div class="cardz-header">
                         <img width="100%" class="img-fluid" src="./assets/img/catalog3.png" alt="">
@@ -392,7 +513,7 @@
     <!-- END RECCOMENDED -->
 
     <!-- TESTIMONI -->
-    <section id="category" class="mypt testimoni ">
+    <section id="category" class="testimoni ">
         <div class="container">
             <div class="row text-center mb-5">
                 <h2 class="mycolorblack">Testimoni Pengguna</h2>
@@ -401,31 +522,41 @@
                     kembangkan.
                     Testimoni yang membuatmu lebih yakin dengan kami</p>
             </div>
-            <div class="row text-center">
-                <div class="col">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-6">
                     <div>
                         <label @click="changeCek" class="mx-3">
-                            <input type="radio" name="test" v-model="testi" value="“A”" checked>
+                            <input type="radio" name="test" v-model="testi"
+                                value="Souvenir dan kerajinan yang dibuat sangat bagus, tamu undangan sangat puas. Terima kasih Terasera."
+                                checked>
                             <img @click=" menu = 'testi1' " v-bind:class="{opacityActive: menu === 'testi1' }"
                                 src="./assets/img/testi1.png" alt="">
                         </label>
                         <label class="mx-3">
-                            <input type="radio" name="test" v-model="testi" value="“B”" checked>
+                            <input type="radio" name="test" v-model="testi"
+                                value="Souvenir dan kerajinan yang dibuat sangat bagus, tamu undangan sangat puas. Terima kasih Terasera."
+                                checked>
                             <img @click=" menu = 'testi2' " v-bind:class="{opacityActive: menu === 'testi2' }"
                                 src="./assets/img/testi2.png" alt="">
                         </label>
                         <label class="mx-3">
-                            <input type="radio" name="test" v-model="testi" value="“C”" checked>
+                            <input type="radio" name="test" v-model="testi"
+                                value="
+                            Tangkapan ikan yang didapat sangat sesuai dengan permintaan kami. Prosesnya cepat dan terpercaya." checked>
                             <img @click=" menu = 'testi3' " v-bind:class="{opacityActive: menu === 'testi3' }"
                                 src="./assets/img/testi3.png" alt="">
                         </label>
                         <label class="mx-3">
-                            <input type="radio" name="test" v-model="testi" value="“D”" checked>
+                            <input type="radio" name="test" v-model="testi"
+                                value="Souvenir dan kerajinan yang dibuat sangat bagus, tamu undangan sangat puas. Terima kasih Terasera."
+                                checked>
                             <img @click=" menu = 'testi4' " v-bind:class="{opacityActive: menu === 'testi4' }"
                                 src="./assets/img/testi4.png" alt="">
                         </label>
                         <label class="mx-3">
-                            <input type="radio" name="test" v-model="testi" value="“E”" checked>
+                            <input type="radio" name="test" v-model="testi"
+                                value="Produksi garam dari daerah Kepulauan Tanimbar sangat bagus dan sesuai dengan kebutuhan kami. Kualitasnya sangat diperhatikan oleh Terasera. Terima kasih."
+                                checked>
                             <img @click=" menu = 'testi5' " v-bind:class="{opacityActive: menu === 'testi5' }"
                                 src="./assets/img/testi5.png" alt="">
                         </label>
@@ -491,7 +622,8 @@
                     <div v-if="testi.length">
                         <p>{{ testi }}</p>
                     </div>
-                    <p v-else>“E”</p>
+                    <p v-else>“Produksi garam dari daerah Kepulauan Tanimbar sangat bagus dan sesuai dengan kebutuhan
+                        kami. Kualitasnya sangat diperhatikan oleh Terasera. Terima kasih.”</p>
 
                 </div>
             </div>
@@ -578,6 +710,36 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <script>
+        new Vue({
+            el: '.floats2',
+            data: {
+                myFloatWrapper: false,
+                changeHeight: true,
+                changeFill: false,
+                pesanText: false
+
+            },
+            methods: {
+                removeHeightNone() {
+                    if (this.changeHeight === true) {
+                        this.changeHeight = false
+                    } else {
+                        this.changeHeight = true
+                    }
+
+                    if (this.myFloatWrapper === false && this.changeFill === false) {
+                        this.myFloatWrapper = true
+                        this.changeFill = true
+                        this.pesanText = true
+                    } else {
+                        this.myFloatWrapper = false
+                        this.changeFill = false
+                        this.pesanText = false
+                    }
+                }
+            }
+        })
+
         new Vue({
             el: '#category',
             data: {

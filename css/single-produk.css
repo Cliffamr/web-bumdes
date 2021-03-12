@@ -3,8 +3,36 @@ single-product {
 }
 
 body {
-    margin-bottom: 2000px;
+    /* margin-bottom: 2000px; */
 }
+
+/* .description {
+    display: none;
+}
+
+.ulasan {
+    display: none;
+} */
+
+.descNonaktif {
+    display: none;
+}
+
+
+/* .displayBlock {
+    display: block;
+} */
+
+.ulasan .mini-love-wrapper {
+    background: red;
+    padding: 5px;
+}
+
+.single {
+    margin-bottom: 70px;
+}
+
+.single .main-image-wrapper {}
 
 .single-filter-wrapper p {
     padding: 15px 0;
@@ -92,7 +120,7 @@ select:hover {
     border-radius: 4px;
     border: solid 1.5px #3875E3;
     background: none;
-    padding: 18px 0px;
+    padding: 15px 0px;
     text-align: center;
     width: 250px;
     transition: .3s;
@@ -122,6 +150,7 @@ select:hover {
     position: absolute;
 }
 
+
 * {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
@@ -130,7 +159,7 @@ select:hover {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1350px;
+        max-width: 1250px !important;
     }
 }
 
@@ -149,6 +178,22 @@ select:hover {
 .lala .list-style+p {
     font-size: 16px;
     margin-right: 20px;
+}
+
+.icon-wrapper {
+    background: #E8EFF7;
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.icon-wrapper:hover {
+    cursor: pointer;
+}
+
+.icon-wrapper:hover .path-mini-love {
+    fill: #FF737350 !important;
 }
 
 .icon-wrapper img {
@@ -179,32 +224,42 @@ select:hover {
     /* identical to box height, or 167% */
     font-weight: 400;
 
-    color: #8d9194;
+    color: #C5C5C5;
 }
 
 .filter-list p,
 .star-wrapper p {
-    color: #1c9ba2 !important;
+    color: #3875E3;
+    transition: .3s;
 }
 
 .filter-list {
+    transition: .3s;
     margin-right: 15px;
     padding: 15px 24px;
     border-radius: 4px;
-    border: solid 1px #1c9ba2;
+    border: solid 1px #3875E3;
+}
+
+.filter-list:hover {
+    transition: .3s;
+    cursor: pointer;
+    background: #3875E3;
+}
+
+.filter-list:hover.filter-list p {
+    transition: .3s;
+    color: white !important;
 }
 
 .ulasan p {
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
-
-    color: #010223;
+    margin-left: 5px;
+    margin-top: 2px;
 }
 
-.descNonaktif {
-    display: none;
-}
 
 .terkait p {
     font-weight: 600;
@@ -329,12 +384,12 @@ ul li {
 
 .merchant p {
     color: #8d9194;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .merchant h4 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 27px;
     /* identical to box height */
 
@@ -347,8 +402,8 @@ ul li {
     border-radius: 4px;
     font-weight: bold;
     background: #3875E3;
-    font-size: 20px;
-    padding: 20px 0px;
+    font-size: 17px;
+    padding: 15px 0px;
     width: 250px;
 }
 
@@ -360,7 +415,7 @@ ul li {
     border: solid 1.5px #3875E3; */
     font-weight: bold;
     background: none;
-    font-size: 20px;
+    font-size: 17px;
     /* padding: 20px 0px; */
     /* width: 250px; */
     transition: 0.3s;
@@ -435,7 +490,7 @@ ul li {
 
 .price-wrapper h1 {
     color: #3875E3;
-    font-size: 50px;
+    font-size: 43px;
 }
 
 .price-wrapper .name-katalog {
@@ -445,7 +500,7 @@ ul li {
 
 .price-wrapper .first-price {
     font-weight: 300;
-    font-size: 21px;
+    font-size: 20px;
     margin: 0;
     text-decoration: line-through;
     color: #A4A4A4;
@@ -475,6 +530,7 @@ ul li {
 
 .setting .pagination-next {
     background: #3875E350;
+    border: solid #3875E3 1px;
     transition: .3s;
 }
 
@@ -494,14 +550,16 @@ ul li {
 
 .list-photo img:hover {
     cursor: pointer;
-    border: solid 1.5px #1c9ba2;
+    border: solid 2px #3875E3;
     border-radius: 4px;
     transition: 0.3s;
 }
 
 .list-photo img {
+    height: 80px;
+    width: 80px;
     cursor: pointer;
-    border: solid 1.5px white;
+    border: solid 2px white;
     transition: 0.3s;
     border-radius: 4px;
 }
