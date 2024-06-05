@@ -1,0 +1,14 @@
+.ubah {
+    color: #3875E3;
+    font-weight: bold;
+
+}
+
+.no-telp {
+    font-weight: 600;
+}
+
+.ubah:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

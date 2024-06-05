@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Produk</title>
+
+    <!--BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/kategori-produk.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/single-produk.css">
+    <!-- G FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- OWL -->
+    <link rel="stylesheet" href="./assets/owl/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/owl/owl.theme.default.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <div id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategori
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item m-0" href="kategori-produk.html">Tangkapan Laut</a></li>
+                                <li><a class="dropdown-item m-0" href="kategori-produk.html">Budidaya Kelautan</a></li>
+                                <li><a class="dropdown-item m-0" href="kategori-produk.html">Olahan Laut</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Promo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mitra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tentang</a>
+                        </li>
+                    </ul>
+                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.0013 20.3428C22.2484 19.6716 21.5893 18.9022 21.0416 18.0552C20.4437 16.886 20.0854 15.6092 19.9876 14.2997V10.4427C19.9927 8.38589 19.2466 6.39795 17.8895 4.85243C16.5323 3.3069 14.6574 2.31017 12.6172 2.04951V1.04232C12.6172 0.76588 12.5073 0.500762 12.3119 0.305289C12.1164 0.109816 11.8513 0 11.5748 0C11.2984 0 11.0333 0.109816 10.8378 0.305289C10.6423 0.500762 10.5325 0.76588 10.5325 1.04232V2.06512C8.51053 2.34458 6.65834 3.34734 5.31898 4.88767C3.97962 6.428 3.24387 8.40153 3.24798 10.4427V14.2997C3.15019 15.6092 2.79184 16.886 2.19395 18.0552C1.65591 18.9002 1.00734 19.6696 0.26546 20.3428C0.182177 20.416 0.115429 20.506 0.0696578 20.607C0.0238863 20.708 0.000140378 20.8175 0 20.9284V21.9902C0 22.1973 0.0822588 22.3959 0.228681 22.5423C0.375102 22.6887 0.573693 22.771 0.780765 22.771H22.486C22.6931 22.771 22.8917 22.6887 23.0381 22.5423C23.1845 22.3959 23.2668 22.1973 23.2668 21.9902V20.9284C23.2666 20.8175 23.2429 20.708 23.1971 20.607C23.1514 20.506 23.0846 20.416 23.0013 20.3428ZM1.62399 21.2095C2.35042 20.5077 2.99001 19.7213 3.52906 18.8672C4.28219 17.4551 4.72162 15.8972 4.81732 14.2997V10.4427C4.78635 9.5277 4.93984 8.61579 5.26863 7.76132C5.59743 6.90684 6.09481 6.12727 6.73116 5.46902C7.36751 4.81077 8.12982 4.28731 8.97269 3.9298C9.81555 3.57229 10.7217 3.38805 11.6373 3.38805C12.5528 3.38805 13.459 3.57229 14.3019 3.9298C15.1448 4.28731 15.9071 4.81077 16.5434 5.46902C17.1798 6.12727 17.6772 6.90684 18.006 7.76132C18.3347 8.61579 18.4882 9.5277 18.4573 10.4427V14.2997C18.553 15.8972 18.9924 17.4551 19.7455 18.8672C20.2846 19.7213 20.9242 20.5077 21.6506 21.2095H1.62399Z"
+                            fill="#51C2D5" />
+                        <path
+                            d="M11.6726 25.3787C12.1645 25.3674 12.6365 25.1825 13.0051 24.8567C13.3737 24.5309 13.6153 24.0853 13.687 23.5986H9.5802C9.65396 24.0985 9.90681 24.5546 10.2917 24.8821C10.6766 25.2095 11.1674 25.386 11.6726 25.3787V25.3787Z"
+                            fill="#51C2D5" />
+                    </svg>
+                    <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.9346 17.0145H8.01182L8.91171 15.2027L23.8639 15.1759C24.3695 15.1759 24.8029 14.8189 24.8932 14.325L26.9639 2.86798C27.0181 2.5675 26.9368 2.25809 26.7382 2.02306C26.64 1.90739 26.5175 1.81421 26.3793 1.74999C26.241 1.68578 26.0903 1.65206 25.9376 1.65117L6.91629 1.58869L6.75376 0.833023C6.65143 0.35106 6.21202 0 5.71241 0H1.06242C0.780651 0 0.51042 0.110646 0.311177 0.307598C0.111934 0.504549 0 0.771673 0 1.0502C0 1.32874 0.111934 1.59586 0.311177 1.79281C0.51042 1.98976 0.780651 2.10041 1.06242 2.10041H4.85163L5.56192 5.43845L7.31056 13.8074L5.0593 17.4399C4.94239 17.5959 4.87197 17.7811 4.85602 17.9746C4.84006 18.1681 4.8792 18.3621 4.96901 18.5348C5.14959 18.8888 5.51377 19.1119 5.91707 19.1119H7.80716C7.40421 19.641 7.18657 20.2854 7.18716 20.9476C7.18716 22.6315 8.57162 24 10.2751 24C11.9786 24 13.3631 22.6315 13.3631 20.9476C13.3631 20.2841 13.1403 19.6385 12.7431 19.1119H17.5917C17.1887 19.641 16.9711 20.2854 16.9717 20.9476C16.9717 22.6315 18.3561 24 20.0596 24C21.7631 24 23.1476 22.6315 23.1476 20.9476C23.1476 20.2841 22.9249 19.6385 22.5276 19.1119H25.9376C26.5215 19.1119 27 18.6419 27 18.0617C26.9983 17.7835 26.8852 17.5172 26.6856 17.321C26.486 17.1248 26.2161 17.0147 25.9346 17.0145ZM7.35871 3.65935L24.6886 3.71588L22.9911 13.1112L9.37822 13.135L7.35871 3.65935ZM10.2751 21.8877C9.75142 21.8877 9.32404 21.4652 9.32404 20.9476C9.32404 20.4299 9.75142 20.0074 10.2751 20.0074C10.7988 20.0074 11.2262 20.4299 11.2262 20.9476C11.2262 21.1969 11.126 21.436 10.9476 21.6123C10.7693 21.7886 10.5273 21.8877 10.2751 21.8877ZM20.0596 21.8877C19.5359 21.8877 19.1086 21.4652 19.1086 20.9476C19.1086 20.4299 19.5359 20.0074 20.0596 20.0074C20.5833 20.0074 21.0107 20.4299 21.0107 20.9476C21.0107 21.1969 20.9105 21.436 20.7321 21.6123C20.5538 21.7886 20.3119 21.8877 20.0596 21.8877Z"
+                            fill="#51C2D5" />
+                    </svg>
+                    <img src="./assets//img/nav-profile.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END NAV -->
+
+    <!-- BREAD CRUMB -->
+    <section class="bread mypt">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./kategori-produk.html">Tangkapan Laut</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Single Produk</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- END BREAD CRUMB -->
+    <!-- <div class="row price-wrapper">
+        <div class="container">
+            <div>
+                <h1 class="name-katalog mb-4">Kepiting Bakau</h1>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="single lala">
+        <div class="container">
+            <div class="row">
+                <div style="position: relative;" class="col-lg-4">
+                    <div class="main-image-wrapper">
+                        <div class="icon-wrapper-love text-center">
+                            <svg width="32" height="28" viewBox="0 0 37 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path @click="activatedIconLove" v-bind:class="{pathLoveActive : iconLoveActive }"
+                                    class="path-love"
+                                    d="M20.7687 31.3366C19.3785 32.5988 17.2382 32.5988 15.848 31.3183L15.6468 31.1353C6.04312 22.4463 -0.231272 16.7573 0.00653242 9.65973C0.116289 6.54998 1.70775 3.56827 4.28702 1.81217C9.11629 -1.48051 15.0797 0.0560747 18.2992 3.82437C21.5187 0.0560747 27.4821 -1.4988 32.3114 1.81217C34.8907 3.56827 36.4821 6.54998 36.5919 9.65973C36.848 16.7573 30.5553 22.4463 20.9517 31.1719L20.7687 31.3366Z"
+                                    fill="#C4C4C4" />
+                            </svg>
+
+                        </div>
+                        <img class="img-fluid image-main" src="./assets/img/imageMain.png" width="100%" alt />
+                        <div class="list-photo justify-content-between d-flex">
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                            <img class="img-fluid" src="./assets/img/mini-mesin-cuci.png" alt />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 price-wrapper">
+                    <div>
+                        <h1 class="name-katalog">Kepiting Bakau</h1>
+                    </div>
+                    <p class="first-price">Rp 298.000</p>
+                    <h1> Rp {{ normalPrice }} / kg</h1>
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center">
+                            <div class="list-style"></div>
+                            <p class="mb-0">Maksimal Pesanan <b>700kg</b></span></p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="list-style"></div>
+                            <p class="mb-0">Harga menyesuaikan durasi penangkapan</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="setting-wrapper d-flex">
+                        <div style="margin-right: 20px;">
+                            <p class="title">Jumlah Pesanan / kg</p>
+                            <div class="d-flex align-items-center setting">
+                                <button v-bind:class="{ deadButton : deadButton }" @click="decOrder">
+                                    <img src="./assets/img/minus.png" alt />
+                                </button>
+                                <p class="m-0">{{ minOrder }}</p>
+                                <button @click="incOrder" class="pagination-next">
+                                    <img src="./assets/img/plus.png" alt />
+                                </button>
+                            </div>
+                        </div>
+                        <div style="position: relative;" class="ml-4">
+                            <p class="title">Durasi Penangkapan : <b>{{ duration }}</b></p>
+                            <div class="d-flex">
+                                <p @click="durationtoggle = 'normal';priceTriggerNormal(); "
+                                    v-bind:class="{ durationActive : durationtoggle === 'normal' }"
+                                    class="normalDuration">Normal</p>
+                                <p @click="durationtoggle = 'fast'; priceTriggerFast(); "
+                                    v-bind:class="{ durationActive : durationtoggle === 'fast' }"
+                                    class=" fastDuration m-0">Cepat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-wrapper d-flex mt-3">
+                        <a href="keranjang.html">
+                            <button style="margin-right: 20px;" class="rent-now">Pesan Langsung</button>
+                        </a>
+                        <div class="button-wrapper">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="path"
+                                    d="M25.0771 18.6342H8.39043L9.22827 16.9473L23.1493 16.9224C23.62 16.9224 24.0235 16.59 24.1076 16.1302L26.0355 5.46328C26.0859 5.18352 26.0102 4.89545 25.8253 4.67663C25.7339 4.56893 25.6199 4.48218 25.4912 4.4224C25.3625 4.36261 25.2221 4.33121 25.0799 4.33039L7.37045 4.27222L7.21914 3.56866C7.12387 3.11994 6.71475 2.79309 6.2496 2.79309H1.92031C1.65797 2.79309 1.40637 2.89611 1.22087 3.07947C1.03537 3.26284 0.931152 3.51155 0.931152 3.77087C0.931152 4.03019 1.03537 4.27889 1.22087 4.46226C1.40637 4.64563 1.65797 4.74864 1.92031 4.74864H5.44819L6.10949 7.85648L7.73753 15.6482L5.64154 19.0303C5.53269 19.1755 5.46713 19.3479 5.45227 19.5281C5.43742 19.7082 5.47386 19.8889 5.55747 20.0496C5.7256 20.3792 6.06466 20.587 6.44015 20.587H8.19988C7.82473 21.0795 7.6221 21.6795 7.62265 22.296C7.62265 23.8638 8.91163 25.1379 10.4976 25.1379C12.0836 25.1379 13.3726 23.8638 13.3726 22.296C13.3726 21.6783 13.1653 21.0772 12.7954 20.587H17.3096C16.9345 21.0795 16.7318 21.6795 16.7324 22.296C16.7324 23.8638 18.0214 25.1379 19.6074 25.1379C21.1934 25.1379 22.4824 23.8638 22.4824 22.296C22.4824 21.6783 22.275 21.0772 21.9051 20.587H25.0799C25.6235 20.587 26.0691 20.1493 26.0691 19.6092C26.0675 19.3501 25.9622 19.1022 25.7764 18.9196C25.5906 18.7369 25.3392 18.6343 25.0771 18.6342ZM10.4976 23.1713C10.0101 23.1713 9.61216 22.778 9.61216 22.296C9.61216 21.814 10.0101 21.4207 10.4976 21.4207C10.9852 21.4207 11.3831 21.814 11.3831 22.296C11.3831 22.5281 11.2898 22.7508 11.1238 22.9149C10.9577 23.0791 10.7325 23.1713 10.4976 23.1713ZM19.6074 23.1713C19.1198 23.1713 18.7219 22.778 18.7219 22.296C18.7219 21.814 19.1198 21.4207 19.6074 21.4207C20.0949 21.4207 20.4928 21.814 20.4928 22.296C20.4928 22.5281 20.3995 22.7508 20.2335 22.9149C20.0674 23.0791 19.8422 23.1713 19.6074 23.1713Z"
+                                    fill="#3875E3" />
+                                <path d="M15.75 12.75L15.75 10.5L15.75 8.25" stroke="#E8EFF7" stroke-width="2"
+                                    class="path" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.5 10.5L15.75 10.5L18 10.5" stroke="#E8EFF7" stroke-width="2" class="path"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <a href="keranjang.html">
+                                <button class="chat">Masukan Keranjang</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="setting-wrapper mt-4">
+                        <p class="title">Merchant</p>
+                        <div class="d-flex align-items-center merchant">
+                            <img src="./assets/img/eve-store.png" class="mr-3" alt />
+                            <div style="margin-left:20px;">
+                                <h4 class="mb-0">Belawan Bahari</h4>
+                                <p class="m-0">
+                                    <span>Kec. Medan Belawan, Prov. Sumatra Utara</span>
+                                </p>
+                                <p class="m-0">
+                                    <a href="#">Tanya mitra tentang produk ini </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="descUlasan">
+        <section id="filter" class="filter mt-5">
+            <div class="container-wrapper">
+                <div class="container">
+                    <div class="row single-filter-wrapper justify-content-center">
+                        <div class="col-lg-2">
+                            <p @click=" lala1 " v-bind:class="{borderBottomActive: cek === 'desc'}">
+                                Deskripsi
+                                Produk
+                            </p>
+                        </div>
+                        <div class="col-lg-2">
+                            <p @click=" lala2 " v-bind:class="{borderBottomActive: cek === 'ulasan'}">
+                                Ulasan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description mt-5 pb-5" :class="{descNonaktif : nonaktif}">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Mesin Cuci,Palmolive Naturals menggunakan bahan dasar terbaik untuk menjadikan kulit Anda
+                            bersih
+                            dan terasa lebih lembut. Palmolive Naturals Milk & Black Orchid diperkaya dengan kebaikan
+                            protein susu dan ekstrak anggrek hitam yang eksotis. Formulanya yang kaya mengandung
+                            pembersih
+                            ringan yang membantu melembabkan dan merawat kulit Anda dalam satu langkah mudah.
+                            Kulit yang lebih lembut dan halus dengan Palmolive Naturals setiap kali Anda mandi
+                        </p>
+                        <ul class="m-0 p-0">
+                            <li style>
+                                <b>Spesifikasi</b>
+                            </li>
+                            <li>Kapasitass : 7kg</li>
+                            <li>Teknologi Inverter : Non-inverte</li>
+                            <li>Type of Washing Machine : Twin Tub Semi-Auto</li>
+                            <li>Kecepatan Putaran (RPM) : 1</li>
+                            <li>Energy Consumption : (W)380</li>
+                        </ul>
+                        <ul class="mt-4 p-0">
+                            <li>
+                                <b>Cara Pakai</b>
+                            </li>
+                            <li>
+                                Tuang sabun ke tangan atau ke shower puff, lalu usapkan ke seluruh badan. Bilas hingga
+                                bersih dengan air.
+                                Kandungan : Water, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Fragrance, Sodium
+                                Cholride, Cocamide MEA, Styrene / Acrylates Copolymer, Sodium Salicylate, Sodium
+                                Benzoate,
+                                Polyquaternium-7, Glycol Distearate, Tetrasodium EDTA, Citric Acid, Lactose, Poloxamer
+                                124,
+                                Honey, Milk Protein, CI 19140, CI 16035
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ulasan mt-5" :class="{descNonaktif : nonaktif2 === 'asu'}">
+            <div class=" container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <p>Filter :</p>
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">1</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">2</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">3</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">4</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <img class="mr-2" src="./assets/img/star.png" alt />
+                                <p class="mb-0">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-5">
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center filter-list">
+                                <p class="mb-0">Semua</p>
+                            </div>
+                            <div class="d-flex align-items-center filter-list">
+                                <p class="mb-0">Dengan Media</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="row mb-5">
+                    <div class="col">
+                        <p>Total Ulasan : 5</p>
+                    </div>
+                </div>
+                <div class="row review mb-5" v-for="myReview in review" v-bind:key="myReview.id">
+                    <div class="col-lg-3">
+                        <div class="d-flex align-items-center">
+                            <img class="" src="./assets/img/profil-testimoni.png" alt />
+                            <div style="margin-left: 15px;" class="ml-3">
+                                <p class="m-0 mt-1 name">{{myReview.name}}</p>
+                                <p class="m-0 date">{{ myReview.date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col right-content">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center star-wrapper">
+                                <img class="mr-1" src="./assets/img/star.png" alt />
+                                <p style="margin-left: 5px;" class="mb-0 mt-1">{{ myReview.stars }}</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="icon-wrapper mr-4 d-flex align-items-center">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="path-mini-love"
+                                            d="M8.65079 17.4734C9.4105 18.1772 10.5801 18.1772 11.3398 17.4632L11.4497 17.3612C16.6977 12.5162 20.1264 9.34395 19.9964 5.38631C19.9365 3.6523 19.0668 1.98968 17.6573 1.01048C15.0183 -0.82554 11.7596 0.0312675 10.0003 2.13249C8.24095 0.0312675 4.9822 -0.83574 2.34322 1.01048C0.933762 1.98968 0.0640965 3.6523 0.00411797 5.38631C-0.135828 9.34395 3.30285 12.5162 8.55083 17.3816L8.65079 17.4734Z"
+                                            fill="#999999" />
+                                    </svg>
+
+                                    <p class="m-0">{{ myReview.likes }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-1">{{ myReview.desc }}</p>
+                    </div>
+                </div>
+                <div class="row see">
+                    <div class="col-lg-3"></div>
+                    <div class="col">
+                        <a href="#">Lihat Semua</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h4>Terasera</h4>
+                        </li>
+                        <li>
+                            <p class="special">Berbagai produksi kelautan kami sediakan disini. Temukan apa yang kamu
+                                cari.</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/icon1.png" alt />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon2.png" alt />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon3.png" alt />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon4.png" alt />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="margin-left: 50px;" class="col">
+                    <ul>
+                        <li>
+                            <h4>Jelajahi</h4>
+                        </li>
+                        <li>
+                            <p>Tentang Kami</p>
+                            <p>Karir</p>
+                            <p>Panduan Penggunaan</p>
+                            <p>Pemasangan Iklan</p>
+                            <p>Ulasan</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h4>Layanan Pelanggan</h4>
+                        </li>
+                        <li>
+                            <p>Bantuan</p>
+                            <p>Hubungi Kami</p>
+                            <p>Pengaduan</p>
+                            <p>Hak dan Kebijakan</p>
+                            <p>FQA</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <img src="./assets/img/star5.png" alt class="mb-4 mt-1" />
+                        </li>
+                        <li>
+                            <p class="special">2.3 ribu orang memiliki pengalaman yang baik bersama kami!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top:100px;font-size:14px;">
+                <p style="color: #ececec;">© 2021 TERASERA ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+    <script>
+        new Vue({
+            el: '.descUlasan',
+            data: {
+                nonaktif: false,
+                nonaktif2: 'asu',
+                cek: 'desc',
+            },
+
+            methods: {
+                lala1() {
+                    this.nonaktif = false;
+                    this.nonaktif2 = true;
+
+                    this.cek = 'desc';
+                },
+                lala2() {
+                    // this.nonaktif = true;
+                    // this.nonaktif2 = 'sdsd';
+
+                    // this.cek = 'ulasan';
+                }
+            }
+        })
+
+        new Vue({
+            el: '.ulasan',
+            data: {
+                review: [{
+                        id: 1,
+                        stars: 5,
+                        desc: "Cepat sekali pengiriman barang nya, dan barang nya saya sangat suka. Dengan Mesin Cuci ini saya semakin bersemangat untuk melakukan pekerjaan saya yaitu designer freelancer",
+                        name: "Daffa Raihanz",
+                        date: "10-12-2020 02:30",
+                        likes: 100,
+                        comments: 70
+                    },
+                    {
+                        id: 2,
+                        stars: 5,
+                        desc: "Awalnya ragu buat beli, ternyata bener habis nyobain barang disni makin yakin aku buat beli barangnya sendiri. Makasih udah bantuin aku buat gak galau lagi.",
+                        name: "Dinda Maylan",
+                        date: "11-11-2020 11:12",
+                        likes: 80,
+                        comments: 10
+                    },
+                    {
+                        id: 3,
+                        stars: 4,
+                        desc: "Cepat sekali pengiriman barang nya, dan barang nya saya sangat suka. Dengan Mesin Cuci ini saya semakin bersemangat untuk melakukan pekerjaan saya yaitu designer freelancer",
+                        name: "Raihan Athaya",
+                        date: "01-11-2020 12:00",
+                        likes: 18,
+                        comments: 10
+                    },
+                    {
+                        id: 4,
+                        stars: 5,
+                        desc: "Produk yang dikirimkan sangat memperhatikan kualitasnya dengan pengiriman pesanan yang tergolong cepat. Ini sangat membantu saya, tidak perlu menunggu lama juga. ",
+                        name: "Dinda May",
+                        date: "10-12-2020 02:30",
+                        likes: 100,
+                        comments: 70
+                    },
+                    {
+                        id: 5,
+                        stars: 5,
+                        desc: "Cepat sekali pengiriman barang nya, dan barang nya saya sangat suka. Dengan Mesin Cuci ini saya semakin bersemangat untuk melakukan pekerjaan saya yaitu designer freelancer",
+                        name: "Daffa Raihanz",
+                        date: "10-12-2020 02:30",
+                        likes: 100,
+                        comments: 70
+                    }
+                ],
+                iconMiniLoveActive: false,
+            },
+            methods: {
+                activatedMiniLoveIcon() {
+                    if (this.iconLoveActive === false) {
+                        this.iconLoveActive = true
+                    } else {
+                        this.iconLoveActive = false
+                    }
+                },
+            }
+        })
+
+        new Vue({
+            el: '.single',
+            data: {
+                iconLoveActive: false,
+                minOrder: 700,
+                normalPrice: "10.000",
+                duration: "Normal",
+                durationtoggle: 'normal'
+            },
+            methods: {
+                activatedIconLove() {
+                    if (this.iconLoveActive === false) {
+                        this.iconLoveActive = true
+                    } else {
+                        this.iconLoveActive = false
+                    }
+                },
+                incOrder() {
+                    this.minOrder++
+                },
+                decOrder() {
+                    if (this.minOrder <= 700) {
+                        this.minOrder = 700
+                    } else {
+                        this.minOrder--
+                    }
+                },
+                priceTriggerFast() {
+                    this.normalPrice = "20.000"
+                    this.duration = "Cepat"
+                },
+                priceTriggerNormal() {
+                    this.normalPrice = "10.000"
+                    this.duration = "Normal"
+                },
+
+            },
+
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+.cekboxActive {
+    background: #3875E3 !important;
+}
+
+.trash:hover .trash-path {
+    stroke: #fff;
+    transition: .3s;
+}
+
+.trash {
+    transition: .3s;
+}
+
+.trash:hover {
+    background: rgb(225, 84, 84);
+    transition: .3s;
+}
+
+.displayOff {
+    display: none;
+}
+
+.input-pesanan {
+    /* background: red; */
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: solid 1.3px #A4A4A4;
+    color: #A4A4A4;
+    border-radius: 8px;
+}
+
+.btn-pesan {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #3875E3;
+    border-radius: 4px;
+    color: white;
+    transition: .3s;
+}
+
+.btn-pesan:hover {
+    transition: .3s;
+    background: rgb(43, 90, 177);
+}
+
+.first-row {
+    flex-direction: column;
+}
+
+.ringkasan {
+    padding: 30px 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.pesanan {
+    color: #3875E3;
+}
+
+.pesanan:hover {
+    color: #3875E3;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hapus:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.cekbox {
+    background: white;
+    border: #3875E3 2px solid;
+    border-radius: 4px;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 20px;
+    height: 24px;
+    width: 24px;
+}
+
+.cekbox:hover {
+    cursor: pointer;
+}
+
+.dot {
+    margin: 0 10px;
+    height: 3px;
+    background: black;
+    width: 3px;
+    border-radius: 2000px;
+}
+
+.icon-wrapper {
+    border: solid #999999 1px;
+    text-align: center;
+    line-height: 40px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+}
+
+.icon-plus {
+    background: #3875E350;
+    border: solid #3875E3 1px;
+    transition: .3s;
+}
+
+.icon-wrapper:hover {
+    cursor: pointer;
+}
+
+.icon-plus:hover {
+    cursor: pointer;
+    background: #3875E380;
+    transition: .3s;
+}
