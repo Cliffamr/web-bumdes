@@ -17,7 +17,6 @@ body {
 .filter {
     background: #E5EDFC;
     position: -webkit-sticky;
-    position: sticky;
     top: 60px;
     z-index: 9;
     font-size: 20px;
